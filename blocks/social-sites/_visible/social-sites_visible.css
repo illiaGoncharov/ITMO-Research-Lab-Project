@@ -1,0 +1,19 @@
+.social-sites_visible{
+    display: flex;
+    column-gap: 10px;
+
+    filter: drop-shadow(0px 4px 20px rgba(73, 111, 168, 0.15));
+}
+
+.social-sites_visible::after{
+    content: "";
+    background-image: url("../../../images/svg/triagle.svg");
+    display: inline-block;
+
+    width: 16px;
+    height: 8px;
+
+    position: absolute;
+    bottom: -8px;
+    right: 30px;
+}

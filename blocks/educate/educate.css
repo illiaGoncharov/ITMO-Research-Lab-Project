@@ -1,0 +1,18 @@
+.educate{
+    background-color: #009FAC;
+    color: #FFFFFF;
+
+    padding: 40px 0;
+}
+
+@media screen and (min-width: 620px){
+    .educate{
+        padding: 60px 0;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .educate{
+        padding: 80px 0;
+    }
+}

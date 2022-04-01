@@ -1,0 +1,16 @@
+.publication__picture{
+    width: 100%;
+}
+
+@media screen and (min-width: 900px){
+    .publication__picture{
+        width: 291px;
+        height: 158px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .publication{
+        width: 310px;
+    }
+}

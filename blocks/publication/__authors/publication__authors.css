@@ -1,0 +1,11 @@
+.publication__authors{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+
+    color: #009FAC;
+
+    margin: 0;
+    margin-top: 4px;
+}

@@ -1,0 +1,27 @@
+.publication__more-text{
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    position: relative;
+}
+
+.publication__more-text::after{
+    content: "";
+    background-image: url("../../../images/svg/arrow-right-white.svg");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 1px;
+    left: 140px;
+    transition: all 0.3s linear;
+}
+
+
+.publication__more-text:hover::after{
+    left: 145px;
+}
