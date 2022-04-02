@@ -2,17 +2,12 @@
     width: 90%;
     margin: 0 auto;
     padding: 40px 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
 }
 
 @media screen and (min-width: 620px){
     .publications__body{
         width: 89%;
-        
+        padding: 60px 0;
     }
 }
 
@@ -21,5 +16,11 @@
         width: 81%;
 
         padding: 60px 0;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .publications__body{
+        padding: 80px 0;
     }
 }

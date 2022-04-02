@@ -29,6 +29,10 @@
 @import url(../blocks/publications/publications.css);
 @import url(../blocks/publications/__body/publications__body.css);
 @import url(../blocks/publications/__title/publications__title.css);
+@import url(../blocks/publications/__points/publications__points.css);
+@import url(../blocks/publications/__slider-button/publications__slider-button.css);
+@import url(../blocks/publications/__slider-button/_type/publications__slider-button_type_next.css);
+@import url(../blocks/publications/__slider-button/_type/publications__slider-button_type_prev.css);
 
 @import url(../blocks/publication/publication.css);
 @import url(../blocks/publication/__body/publication__body.css);
@@ -36,6 +40,7 @@
 @import url(../blocks/publication/__authors/publication__authors.css);
 @import url(../blocks/publication/__text/publication__text.css);
 @import url(../blocks/publication/__picture/publication__picture.css);
+@import url(../blocks/publication/__picture/_visible/publication__picture_visible.css);
 @import url(../blocks/publication/__links/publication__links.css);
 @import url(../blocks/publication/__links/_visible/publication__links_visible.css);
 @import url(../blocks/publication/__more-text/publication__more-text.css);
@@ -45,3 +50,6 @@
 
 @import url(../blocks/social-sites/social-sites.css);
 @import url(../blocks/social-sites/_visible/social-sites_visible.css);
+
+@import url(../blocks/swiper-pagination-bullet/swiper-pagination-bullet.css);
+@import url(../blocks/swiper-pagination-bullet-active/swiper-pagination-bullet-active.css);

@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./pages/index.css">
-    <title> </title>
+    <title>ITMO</title>
 </head>
 
 <body class="body">
@@ -18,7 +19,8 @@
                 электронного
                 и дистанционного образования. Реализуются образовательные программы различных форматов.</p>
             <div class="programs educate__programs">
-                <img class="programs__picture" src="./images/picture/magistr.png" alt="Фотография студентов окончивших магистратуру">
+                <img class="programs__picture" src="./images/picture/magistr.png"
+                    alt="Фотография студентов окончивших магистратуру">
                 <div class="programs__text">
                     <h3 class="title programs__title">Образовательные программы аспирантуры в области МО и КТ</h3>
                     <ul class="list programs__list">
@@ -45,65 +47,73 @@
     </section>
 
     <section class="publications">
-        <div class="publications__body">
+        <div class="publications__body swiper">
             <h2 class="title publications__title">Публикации</h2>
+            <div class="publications__slider swiper-wrapper">
 
-            <article class="publications__publication publication">
-                <div class="publication__body">
-                    <img class="publication__picture"
-                        src="./images/picture/publication_Topic-driven Ensemble for Online Advertising Generation.png"
-                        alt="Topic-driven Ensemble for Online Advertising Generation">
-                    <h1 class="title publication__title">Topic-driven Ensemble for Online Advertising Generation</h1>
-                    <p class="publication__authors">Egor Nevezhin, Nikolay Butakov, Maria Khodorchenko, Maxim Petrov,
-                        Denis
-                        Nasonov</p>
-                    <p class="publication__text">Online advertising is one of the most widespread ways to reach and
-                        increase
-                        a target audience for those selling products. Usually having a form of a banner, advertising
-                        engages
-                        users into visiting a corresponding webpage. Professional generation of banners requires
-                        creative
-                        and writing skills and a basi</p>
-                </div>
-                <div class="publication__links publication__links_visible">
-                    <p class="publication__more-text">Читать полностью</p>
-                    <button class="button publicaction__button">
-                        <img class="publicaction__share" src="./images/svg/share.svg" alt="Кнопка поделиться">
-                    </button>
-                </div>
+                <template class="publications__template">
+                    <article class="publications__publication publication swiper-slide">
+                        <div class="publication__body">
+                            <img class="publication__picture publication__picture_visible">
+                            <h1 class="title publication__title"></h1>
+                            <p class="publication__authors"></p>
+                            <p class="publication__text"></p>
+                        </div>
+                        <div class="publication__links publication__links_visible">
+                            <a class="link publication__link" href="#">
+                                <p class="publication__more-text">Читать полностью</p>
+                            </a>
+                            
+                            <button class="button publicaction__button">
+                                <img class="publicaction__share" src="./images/svg/share.svg" alt="Кнопка поделиться">
+                            </button>
+                        </div>
 
-                <ul class="list publication__social-sites social-sites social-sites_visible">
-                    <li class="social-sites__item">
-                        <a class="social-sites__link" href="#">
-                            <img class="social-sites__picture" src="./images/svg/vk.svg" alt="Иконка 'Вконтакте'">
-                        </a>
-                    </li>
-                    <li class="social-sites__item">
-                        <a class="social-sites__link" href="#">
-                            <img class="social-sites__picture" src="./images/svg/facebook.svg" alt="Иконка 'Facebook'">
-                        </a>
-                    </li>
-                    <li class="social-sites__item">
-                        <a class="social-sites__link" href="#">
-                            <img class="social-sites__picture" src="./images/svg/telegram.svg" alt="Иконка 'Telegram'">
-                        </a>
-                    </li>
-                    <li class="social-sites__item">
-                        <a class="social-sites__link" href="#">
-                            <img class="social-sites__picture" src="./images/svg/insta.svg" alt="Иконка 'Instagram'">
-                        </a>
-                    </li>
-                    <li class="social-sites__item">
-                        <a class="social-sites__link" href="#">
-                            <img class="social-sites__picture" src="./images/svg/youTube.svg" alt="Иконка 'YouTube'">
-                        </a>
-                    </li>
-                </ul>
+                        <ul class="list publication__social-sites social-sites social-sites_visible">
+                            <li class="social-sites__item">
+                                <a class="social-sites__link" href="#">
+                                    <img class="social-sites__picture" src="./images/svg/vk.svg"
+                                        alt="Иконка 'Вконтакте'">
+                                </a>
+                            </li>
+                            <li class="social-sites__item">
+                                <a class="social-sites__link" href="#">
+                                    <img class="social-sites__picture" src="./images/svg/facebook.svg"
+                                        alt="Иконка 'Facebook'">
+                                </a>
+                            </li>
+                            <li class="social-sites__item">
+                                <a class="social-sites__link" href="#">
+                                    <img class="social-sites__picture" src="./images/svg/telegram.svg"
+                                        alt="Иконка 'Telegram'">
+                                </a>
+                            </li>
+                            <li class="social-sites__item">
+                                <a class="social-sites__link" href="#">
+                                    <img class="social-sites__picture" src="./images/svg/insta.svg"
+                                        alt="Иконка 'Instagram'">
+                                </a>
+                            </li>
+                            <li class="social-sites__item">
+                                <a class="social-sites__link" href="#">
+                                    <img class="social-sites__picture" src="./images/svg/youTube.svg"
+                                        alt="Иконка 'YouTube'">
+                                </a>
+                            </li>
+                        </ul>
 
-            </article>
-            
+                    </article>
+                </template>                
+            </div>
+
+            <div class="publications__points swiper-pagination"></div>
         </div>
+
+        <button class="button publications__slider-button publications__slider-button_type_prev"></button>
+        <button class="button publications__slider-button publications__slider-button_type_next"></button>
     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

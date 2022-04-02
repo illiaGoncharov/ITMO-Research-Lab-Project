@@ -25,3 +25,18 @@
 .publication__more-text:hover::after{
     left: 145px;
 }
+
+@media screen and (min-width: 700px){
+    .publication__more-text{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .publication__more-text::after{
+        left: 180px;
+    }
+
+    .publication__more-text:hover::after{
+        left: 185px;
+    }
+}
