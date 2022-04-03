@@ -53,3 +53,23 @@
 
 @import url(../blocks/swiper-pagination-bullet/swiper-pagination-bullet.css);
 @import url(../blocks/swiper-pagination-bullet-active/swiper-pagination-bullet-active.css);
+
+@import url(../blocks/team/team.css);
+@import url(../blocks/team/__header/team__header.css);
+@import url(../blocks/team/__cards/team__cards.css);
+@import url(../blocks/team/__persons/team__persons.css);
+@import url(../blocks/team/__person/team__person.css);
+@import url(../blocks/team/__photo/team__photo.css);
+@import url(../blocks/team/__name/team__name.css);
+@import url(../blocks/team/__occupation/team__occupation.css);
+@import url(../blocks/team/__slide/team__slide.css);
+@import url(../blocks/team/__bullet/team__bullet.css);
+@import url(../blocks/team/__arrow/team__arrow.css);
+@import url(../blocks/team/__arrow/_next/team__arrow_next.css);
+@import url(../blocks/team/__arrow/_back/team__arrow_back.css);
+
+@import url(../blocks/working/working.css);
+@import url(../blocks/working/__header/working__header.css);
+@import url(../blocks/working/__text/working__text.css);
+@import url(../blocks/working/__box/working__box.css);
+@import url(../blocks/working/__image/working__image.css);
