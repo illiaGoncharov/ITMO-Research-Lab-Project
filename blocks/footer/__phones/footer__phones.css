@@ -1,0 +1,17 @@
+.footer__phones {
+  padding: 0;
+  margin: 0 0 8px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.1px;
+  list-style-type: none;
+}
+
+@media (min-width: 1440px) {
+  .footer__phones {
+    font-size: 14px;
+    line-height: 1.36;
+  }
+}

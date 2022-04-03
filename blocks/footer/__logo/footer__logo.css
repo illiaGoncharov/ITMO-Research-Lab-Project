@@ -1,0 +1,19 @@
+.footer__logo {
+  grid-area: logo;
+  display: inline-block;
+  width: 98px;
+  height: 33px;
+}
+
+@media (min-width: 768px) {
+  .footer__logo {
+    width: 150px;
+    height: 54px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .footer__logo {
+    margin-bottom: 4px;
+  }
+}

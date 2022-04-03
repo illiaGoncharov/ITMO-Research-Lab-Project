@@ -146,12 +146,205 @@
             <section class="partners">
             </section>
     
-            <section class="contact">
-            </section>
+            <section class="communication">
+                <div class="communication__container">
+                  <h2 class="communication__title">Всегда на связи</h2>
+                  <p class="communication__description">
+                    По&nbsp;всем интересующим вас вопросам вы всегда можете обратиться
+                    по&nbsp;указанным телефонам, написать на&nbsp;почту или оставить
+                    свое сообщение через форму обратной связи.
+                  </p>
+                  <form
+                    name="communication-form"
+                    action="#"
+                    method="post"
+                    autocomplete="off"
+                    class="communication__form"
+                  >
+                    <input
+                      class="communication__input"
+                      id="user-name"
+                      name="userName"
+                      placeholder="Имя"
+                      type="text"
+                      required
+                      minlength="2"
+                      maxlength="40"
+                    />
+                    <input
+                      class="communication__input"
+                      id="user-surname"
+                      name="userSurname"
+                      placeholder="Фамилия"
+                      type="text"
+                      required
+                      minlength="2"
+                      maxlength="40"
+                    />
+                    <input
+                      class="communication__input"
+                      id="user-phone-number"
+                      name="userPhoneNumber"
+                      placeholder="Телефон"
+                      type="tel"
+                      required
+                    />
+                    <input
+                      class="communication__input"
+                      id="user-email"
+                      name="userEmail"
+                      placeholder="E-mail"
+                      type="email"
+                      required
+                    />
+                    <textarea
+                      class="communication__text-area"
+                      id="user-message"
+                      name="userMessage"
+                      placeholder="Сообщение"
+                      required
+                      minlength="2"
+                      maxlength="200"
+                    ></textarea>
+                    <input
+                      class="communication__send-button"
+                      type="submit"
+                      name="messageSend"
+                      value="Отправить"
+                    />
+                  </form>
+                </div>
+              </section>
         </main>
 
         <footer class="footer">
-        </footer>
+            <div class="footer__container">
+            <a class="footer__logo">
+              <img class="logo" src="./images//logo/logo.svg" alt="ИТМО" />
+            </a>
+            <p class="footer__info">Информация © 2020 Университет ИТМО</p>
+      
+            <p class="footer__center-description">
+              Национальный центр когнитивных разработок&mdash; центр национальной
+              технологической инициативы (НТИ), получивший государственную поддержку
+              по направлению &laquo;Технологии машинного обучения и
+              когнитивные технологии&raquo;. Инфраструктурная основа
+              взаимодействия научных, образовательных и промышленных организаций
+            </p>
+      
+            <div class="footer__column footer__column_content_about-center">
+              <h5 class="footer__column-heading">О центре</h5>
+              <nav>
+                <ul class="footer__column-links">
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">О нас</a>
+                  </li>
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Главная</a>
+                  </li>
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Команда</a>
+                  </li>
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Лаборатория</a>
+                  </li>
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+      
+            <div class="footer__column footer__column_content_education">
+              <h5 class="footer__column-heading">Развитие</h5>
+              <nav>
+                <ul class="footer__column-links">
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Образование</a>
+                  </li>
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Аспирантура</a>
+                  </li>
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Магистратура</a>
+                  </li>
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Публикации</a>
+                  </li>
+                  <li class="footer__column-links-item">
+                    <a class="footer__link" href="#">Проекты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+      
+            <div class="footer__column footer__column_content_contacts">
+              <div>
+                <p class="footer__city">г.Санкт-Петербург</p>
+                <p class="footer__address">
+                  199034, Санкт-Петербург, Биржевая&nbsp;линия,&nbsp;д.&nbsp;4, лит.&nbsp;М,
+                  ауд.&nbsp;302С
+                </p>
+                <ul class="footer__phones">
+                  <li>+7 (812) 337-64-90</li>
+                  <li>+7 (812) 337-64-94</li>
+                </ul>
+                <p class="footer__email">anna.lutsenko@itmo.ru</p>
+              </div>
+              <nav>
+                <ul class="footer__social">
+                  <li class="footer__social-item">
+                    <a class="footer__link footer__link_type_social" href="#">
+                      <img
+                        class="footer__social-icon"
+                        src="./images/social/VK.svg"
+                        alt="VK"
+                      />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__link footer__link_type_social" href="#">
+                      <img
+                        class="footer__social-icon"
+                        src="./images/social/Facebook.svg"
+                        alt="Facebook"
+                      />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__link footer__link_type_social" href="#">
+                      <img
+                        class="footer__social-icon"
+                        src="./images/social/Telegram.svg"
+                        alt="Telegram"
+                      />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__link footer__link_type_social" href="#">
+                      <img
+                        class="footer__social-icon"
+                        src="./images/social/Instagram.svg"
+                        alt="Instagram"
+                      />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__link footer__link_type_social" href="#">
+                      <img
+                        class="footer__social-icon"
+                        src="./images/social/Youtube.svg"
+                        alt="Youtube"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+      
+            <p class="footer__author">Сделано студентами Яндекс. Практикума</p>
+          </div>
+          </footer>
     </div>
   
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

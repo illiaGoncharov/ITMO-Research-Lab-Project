@@ -1,0 +1,15 @@
+.footer__email {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.1px;
+}
+
+@media (min-width: 1440px) {
+  .footer__email {
+    font-size: 14px;
+    line-height: 1.36;
+  }
+}
