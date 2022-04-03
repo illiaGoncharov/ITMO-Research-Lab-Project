@@ -1,64 +1,140 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITMO Research Lab</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITMO Research Lab</title>
+  <!-- Можно переложить в ассеты, на твое усмотрение -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./vendor/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./pages/index.css">
 
-    <!-- Можно переложить в ассеты, на твое усмотрение -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
+
 <body class="body">
-    <div class="page">
-        <header class="header">
-            <img src="" alt="" class="header__logo">
-            <ul class="header__nav">
-                <li class="header__nav-list"></li>
-            </ul>
-        </header>
+  <div class="page">
+    <header class="header">
+      <img src="" alt="" class="header__logo">
+      <ul class="header__nav">
+        <li class="header__nav-list"></li>
+      </ul>
+    </header>
 
-        <main class="main">
-            <section class="hero">
-                <h1 class="hero__title">
-                    <span>Когнитивные технологии</span>, машинное обучение
-                </h1>
-                <p class="hero__sub-title">
-                    Системы прикладного искусственного интеллекта
-                </p> 
-                <button class="hero__button">Наши проекты</button>
-            </section>
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title">
+          <span>Когнитивные технологии</span>, машинное обучение
+        </h1>
+        <p class="hero__sub-title">
+          Системы прикладного искусственного интеллекта
+        </p>
+        <button class="hero__button">Наши проекты</button>
+      </section>
 
-            <section class="about">
-            </section>
-    
-            <section class="lab">
-            </section>
-    
-            <section class="projects">
-            </section>
-    
-            <section class="education">
-            </section>
-    
-            <section class="publications">
-            </section>
-    
-            <section class="team">
-            </section>
-    
-            <section class="partners">
-            </section>
-    
-            <section class="contact">
-            </section>
-        </main>
+      <section class="about">
+      </section>
 
-        <footer class="footer">
-        </footer>
-    </div>
-    <!-- Можно переложить в ассеты, на твое усмотрение -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <section class="lab">
+      </section>
 
-    <!-- develop added -->
+      <section class="projects">
+      </section>
+
+      <section class="education">
+      </section>
+
+      <section class="publications">
+      </section>
+
+      <section class="team">
+        <h2 class="team__header">НАША КОМАНДА</h2>
+        <div class="team__arrow team__arrow_back swiper-button-prev"></div>
+        <div class="team__cards swiper">
+          <ul class="team__persons swiper-wrapper">
+            <li class="team__person swiper-slide">
+              <img src="./images/Team/man photo.png" alt="фото" class="team__photo">
+              <h3 class="team__name">Бобцов Алексей Алексеевич</h3>
+              <p class="team__occupation">Директор, ДТН</p>
+            </li>
+            <li class="team__person swiper-slide">
+              <img src="./images/Team/man photo-1.png" alt="фото" class="team__photo">
+              <h3 class="team__name">Буханоский
+                Александр Валерьевич</h3>
+              <p class="team__occupation">Директор, ДТН</p>
+            </li>
+            <li class="team__person swiper-slide">
+              <img src="./images/Team/man photo-2.png" alt="фото" class="team__photo">
+              <h3 class="team__name">Муромцев
+                Дмитрий Ильич</h3>
+              <p class="team__occupation">Руководитель, КТН</p>
+            </li>
+            <li class="team__person swiper-slide">
+              <img src="./images/Team/man photo-3.png" alt="фото" class="team__photo">
+              <h3 class="team__name">Матвеев
+                Юрий Николаевич</h3>
+              <p class="team__occupation">Руководитель, ДТН</p>
+            </li>
+            <li class="team__person swiper-slide">
+              <img src="./images/Team/man photo-4.png" alt="фото" class="team__photo">
+              <h3 class="team__name">Шалыто
+                Анатолий Абрамович</h3>
+              <p class="team__occupation">Профессор, ДТН</p>
+            </li>
+            <li class="team__person swiper-slide">
+              <img src="./images/Team/man photo-5.png" alt="фото" class="team__photo">
+              <h3 class="team__name">Колюбин
+                Сергей Алексеевич</h3>
+              <p class="team__occupation">Начальник, ДТН</p>
+            </li>
+            <li class="team__person swiper-slide">
+              <img src="./images/Team/man photo-6.png" alt="фото" class="team__photo">
+              <h3 class="team__name">Пыркин
+                Антон Александрович</h3>
+              <p class="team__occupation">Декан, ДТН</p>
+            </li>
+          </ul>
+          <div class="team__slide swiper-pagination"></div>
+        </div>
+        <div class="team__arrow team__arrow_next swiper-button-next"></div>
+      </section>
+
+      <section class="working">
+        <h2 class="working__header">С КЕМ МЫ РАБОТАЕМ</h2>
+        <p class="working__text">За время сотрудничества компания показала себя как надежный партнер, способный
+          оперативно решать вопросы по
+          внесению необходимых изменений. </p>
+        <p class="working__text"> Отдельно хочется отметить квалифицированный персонал компании, который всегда
+          готов прийти&nbsp;на&nbsp;помощь в решении
+          поставленных задач, дать объективную оценку и свои рекомендации по&nbsp;улучшению деятельности.
+          Надеемся на дальнейшее и плодотворное сотрудничество.</p>
+        <div class="working__box">
+          <img src="./images/Partners/Rosveft.svg" alt="Роснефть" class="working__image">
+          <img src="./images/Partners/Gazprom.svg" alt="Газпром" class="working__image">
+          <img src="./images/Partners/MailLogo.svg" alt="Mail" class="working__image">
+          <img src="./images/Partners/Siemens-logo.svg" alt="Siemens" class="working__image">
+          <img src="./images/Partners/MailLogo.svg" alt="Mail" class="working__image">
+          <img src="./images/Partners/Gazprom.svg" alt="Газпром" class="working__image">
+          <img src="./images/Partners/Sberbank_Logo_2020 1.svg" alt="Сбербанк" class="working__image">
+          <img src="./images/Partners/huawei-logo 1.svg" alt="Huawei" class="working__image">
+          <img src="./images/Partners/Sberbank_Logo_2020 1.svg" alt="Сбербанк" class="working__image">
+          <img src="./images/Partners/huawei-logo 1.svg" alt="Huawei" class="working__image">
+        </div>
+      </section>
+
+      <section class="contact">
+      </section>
+    </main>
+
+    <footer class="footer">
+    </footer>
+  </div>
+  <!-- Можно переложить в ассеты, на твое усмотрение -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./vendor/swiper-bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
+
+  <!-- develop added -->
 </body>
+
 </html>

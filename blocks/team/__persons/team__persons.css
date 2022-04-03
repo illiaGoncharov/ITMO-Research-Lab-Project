@@ -1,0 +1,25 @@
+.team__persons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 288px;
+  margin-bottom: 14px;
+  gap: 8px;
+
+}
+
+@media (min-width : 768px) {
+  .team__persons {
+    max-width: 690px;
+    gap: 30px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width : 1440px) {
+  .team__persons {
+    max-width: 1110px;
+    gap: 30px;
+    margin-bottom: 31px;
+  }
+}
