@@ -1,0 +1,21 @@
+.intro__about-us-cards{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-bottom: 13px;
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+@media screen and (min-width: 768px) {
+    .intro__about-us-cards{
+        padding-bottom: 0;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .intro__about-us-cards{
+        padding-right: 95px;
+        padding-left: 83px;
+    }
+}

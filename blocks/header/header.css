@@ -1,0 +1,10 @@
+.header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    height: calc(44px + 36 * (100vw - 320px) / 1120);
+    background: #000D26;
+}
