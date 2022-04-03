@@ -1,0 +1,28 @@
+.publication__title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    margin-top: 12px;
+
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width: 620px){
+    .publication__title{
+        font-size: 18px;
+        line-height: 30px;
+
+        margin-top: 16px;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .publication__title{
+        margin-top: 20px;
+    }
+}

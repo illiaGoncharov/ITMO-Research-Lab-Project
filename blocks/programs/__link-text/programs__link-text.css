@@ -1,0 +1,62 @@
+.programs__link-text{
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    position: relative;
+}
+
+.programs__link-text::after{
+    content: "";
+    background-image: url("../../../images/svg/arrow-right.svg");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: -5px;
+    left: 80px;
+    transition: all 0.3s linear;
+}
+
+.programs__link-text:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.programs__link-text:hover::after{
+    left: 85px;
+}
+
+@media screen and (min-width: 620px){
+    .programs__link-text{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .programs__link-text::after{
+        bottom: -3px;
+        left: 88px;
+    }
+
+    .programs__link-text:hover::after{
+        left: 93px;
+    }
+}
+
+
+@media screen and (min-width: 1250px){
+    .programs__link-text{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .programs__link-text::after{
+        bottom: 1px;
+        left: 115px;
+    }
+
+    .programs__link-text:hover::after{
+        left: 120px;
+    }
+}

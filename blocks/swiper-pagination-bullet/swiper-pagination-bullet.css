@@ -1,0 +1,14 @@
+.swiper-pagination-bullet{
+    width: 6px;
+    height: 6px;
+
+    background-color: #000D26;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 620px){
+    .swiper-pagination-bullet{
+        width: 8px;
+        height: 8px;
+    }
+}
