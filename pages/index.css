@@ -27,6 +27,18 @@
 @import url(../blocks/intro/__about-us-strel-left/intro__about-us-strel-left.css);
 @import url(../blocks/intro/__about-us-toshki/intro__about-us-toshki.css);
 
+@import url(../blocks/industrial/industrial.css);
+@import url(../blocks/industrial/__title/industrial__title.css);
+@import url(../blocks/industrial/__main-cont/industrial__main-cont.css);
+@import url(../blocks/industrial/__img/industrial__img.css);
+@import url(../blocks/industrial/__text/industrial__text.css);
+@import url(../blocks/industrial/__cards/industrial__cards.css);
+@import url(../blocks/industrial/__card/industrial__card.css);
+@import url(../blocks/industrial/__card-title/industrial__card-title.css);
+@import url(../blocks/industrial/__card-img-cont/industrial__card-img-cont.css);
+@import url(../blocks/industrial/__card-img/industrial__card-img.css);
+@import url(../blocks/industrial/__card-text/industrial__card-text.css);
+@import url(../blocks/industrial/__card-button/industrial__card-button.css);
 
 @import url(../blocks/title/title.css);
 @import url(../blocks/subtitle/subtitle.css);

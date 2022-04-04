@@ -1,0 +1,25 @@
+.industrial__img{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    min-width: calc(288px + 42 * (100vw - 320px) / 448);
+    height: calc(180px + 60 * (100vw - 320px) / 448);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 1440px) {
+    .industrial__img{
+        min-width: 264px;
+        height: 276px;
+    }
+}
+.industrial__img2{
+    display: none;
+}
+@media screen and (min-width: 1440px) {
+    .industrial__img2{
+        display: block;
+        margin-right: 12px;
+    }
+}

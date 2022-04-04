@@ -1,0 +1,49 @@
+.industrial__card{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(140px + 10 * (100vw - 320px) / 448);
+    height: calc(224px + 18 * (100vw - 320px) / 448);
+    background: #FFFFFF;
+    border-radius: 5.45566px;
+    padding: 10px;
+
+}
+@media screen and (min-width: 768px) {
+    .industrial__card {
+        background-image: url(../../../images/industrial/foncarddeck.png);
+        border-radius: 5.88372px;
+    }
+}
+.industrial__card {
+    width: 255px;
+    height: 430px;
+    padding: 30px;
+}
+@media screen and (min-width: 1440px) {
+    .industrial__card-2 {
+        background-image: url(../../../images/industrial/indCard2.png);
+    }
+}
+@media screen and (min-width: 1440px) {
+    .industrial__card-3 {
+        background-image: url(../../../images/industrial/indCard3.png);
+    }
+}
+@media screen and (min-width: 1440px) {
+    .industrial__card-4 {
+        background-image: url(../../../images/industrial/indCard4.png);
+    }
+}
+.industrial__card:hover{
+    background: #009FAC;
+}
+@media screen and (min-width: 768px) {
+    .industrial__card:hover {
+        transform: translateY(-10px);
+    }
+}
+
