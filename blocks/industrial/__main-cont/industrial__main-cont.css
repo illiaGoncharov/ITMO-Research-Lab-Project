@@ -1,0 +1,13 @@
+.industrial__main-cont{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .industrial__main-cont{
+        flex-direction: row-reverse;
+    }
+}
