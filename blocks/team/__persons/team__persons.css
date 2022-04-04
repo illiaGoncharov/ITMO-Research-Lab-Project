@@ -14,7 +14,7 @@
   }
 }
 
-@media (min-width : 1440px) {
+@media (min-width : 1200px) {
   .team__persons {
     max-width: 1110px;
     margin-bottom: 51px;

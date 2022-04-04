@@ -3,7 +3,7 @@
   overflow:unset;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .team__cards {
     overflow: hidden;
   }

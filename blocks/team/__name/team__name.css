@@ -17,7 +17,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .team__name {
     font-size: 18px;
     line-height:  1.6;
