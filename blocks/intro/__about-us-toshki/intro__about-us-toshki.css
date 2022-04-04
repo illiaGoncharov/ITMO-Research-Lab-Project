@@ -1,0 +1,19 @@
+.intro__about-us-toshki{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 54px;
+}
+@media screen and (min-width: 768px) {
+    .intro__about-us-toshki{
+        width: 68px;
+        height: 50px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .intro__about-us-toshki{
+        width: 68px;
+        height: 50px;
+        padding-bottom: 80px;
+    }
+}

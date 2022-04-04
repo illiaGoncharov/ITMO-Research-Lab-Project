@@ -1,0 +1,17 @@
+.intro__about-us-strel-left{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #001337;
+    box-shadow: 0px 4px 30px rgba(224, 240, 255, 0.1);
+    border-radius: 36px;
+    width: 36px;
+    height: 36px;
+    padding: 12px;
+    margin-bottom: 70px;
+}
+@media screen and (min-width: 1440px) {
+    .intro__about-us-strel-left{
+        display: flex;
+    }
+}

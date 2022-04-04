@@ -1,0 +1,24 @@
+.footer__column-heading {
+  margin: 0 0 8px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+}
+
+@media (min-width: 768px) {
+  .footer__column-heading {
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.33;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__column-heading {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.36;
+  }
+}

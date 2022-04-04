@@ -1,0 +1,26 @@
+.intro__title{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: calc(32px + 22 * (100vw - 320px) / 448);
+    line-height: calc(44px + 24 * (100vw - 320px) / 448);
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-left: calc(16px + 23 * (100vw - 320px) / 448);
+    padding-top:  calc(30px + 28 * (100vw - 320px) / 448);
+}
+@media screen and (max-width: 768px) {
+    .intro__title {
+        padding-right: 248px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .intro__title {
+        margin-left: 830px;
+        margin-right: 165px;
+        padding-top: 92px;
+        font-size: 54px;
+        line-height: 68px;
+    }
+}

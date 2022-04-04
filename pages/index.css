@@ -2,11 +2,38 @@
 @import url(../vendor/font/font.css);
 
 @import url(../blocks/body/body.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__nav/header__nav.css);
+@import url(../blocks/header/__nav-item/header__nav-item.css);
+@import url(../blocks/header/__icon/header__icon.css);
+
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__title-min/intro__title-min.css);
+@import url(../blocks/intro/__subtitle/intro__subtitle.css);
+@import url(../blocks/intro/__button/intro__button.css);
+@import url(../blocks/intro/__about-us-title/intro__about-us-title.css);
+@import url(../blocks/intro/__about-us-text/intro__about-us-text.css);
+@import url(../blocks/intro/__about-us-cards/intro__about-us-cards.css);
+@import url(../blocks/intro/__about-us-card/intro__about-us-card.css);
+@import url(../blocks/intro/__about-us-knopka/intro__about-us-knopka.css);
+@import url(../blocks/intro/__about-us-card-data/intro__about-us-card-data.css);
+@import url(../blocks/intro/__about-us-card-title/intro__about-us-card-title.css);
+@import url(../blocks/intro/__about-us-card-polpska/intro__about-us-card-polpska.css);
+@import url(../blocks/intro/__about-us-card-text/intro__about-us-card-text.css);
+@import url(../blocks/intro/__about-u-strel-right/intro__about-u-strel-right.css);
+@import url(../blocks/intro/__about-us-strel-left/intro__about-us-strel-left.css);
+@import url(../blocks/intro/__about-us-toshki/intro__about-us-toshki.css);
+
+
 @import url(../blocks/title/title.css);
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/list/list.css);
 @import url(../blocks/link/link.css);
 @import url(../blocks/button/button.css);
+@import url(../blocks/logo/logo.css);
 
 @import url(../blocks/educate/educate.css);
 @import url(../blocks/educate/__body/educate__body.css);
@@ -73,3 +100,34 @@
 @import url(../blocks/working/__text/working__text.css);
 @import url(../blocks/working/__box/working__box.css);
 @import url(../blocks/working/__image/working__image.css);
+@import url(../blocks/communication/communication.css);
+@import url(../blocks/communication/__container/communication__container.css);
+@import url(../blocks/communication/__title/communication__title.css);
+@import url(../blocks/communication/__description/communication__description.css);
+@import url(../blocks/communication/__form/communication__form.css);
+@import url(../blocks/communication/__input/communication__input.css);
+@import url(../blocks/communication/__text-area/communication__text-area.css);
+@import url(../blocks/communication/__send-button/communication__send-button.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks//footer/__container/footer__container.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__link/_type/footer__link_type_social.css);
+@import url(../blocks/footer/__column/footer__column.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_about-center.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_education.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_contacts.css);
+@import url(../blocks/footer/__column-heading/footer__column-heading.css);
+@import url(../blocks/footer/__column-links/footer__column-links.css);
+@import url(../blocks/footer/__column-links-item/footer__column-links-item.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
+@import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__center-description/footer__center-description.css);
+@import url(../blocks/footer/__city/footer__city.css);
+@import url(../blocks/footer/__address/footer__address.css);
+@import url(../blocks/footer/__phones/footer__phones.css);
+@import url(../blocks/footer/__email/footer__email.css);
+@import url(../blocks/footer/__social/footer__social.css);
+@import url(../blocks/footer/__social-item/footer__social-item.css);
+@import url(../blocks/footer/__social-icon/footer__social-icon.css);
+@import url(../blocks/footer/__author/footer__author.css);

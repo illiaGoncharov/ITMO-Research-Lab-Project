@@ -1,0 +1,39 @@
+.footer__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(140px, max-content) minmax(140px, max-content);
+  justify-content: center;
+  gap: 40px 8px;
+  grid-template-areas:
+    "logo info"
+    "about education"
+    "contacts contacts"
+    "author author";
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    grid-template-columns: 204px 80px 80px 190px;
+    justify-content: flex-start;
+    row-gap: 30px;
+    column-gap: calc((100% - 578px) / 3);
+    grid-template-areas:
+      "logo . . ."
+      "info info . ."
+      "description about education contacts"
+      "author author . contacts";
+  }
+}
+
+@media (min-width: 1140px) {
+  .footer__container {
+    grid-template-columns: 280px 94px 94px 206px;
+    column-gap: calc((100% - 674px) / 3);
+    grid-template-areas:
+      "logo . . ."
+      "info about education contacts"
+      "description about education contacts"
+      "author author . .";
+  }
+}

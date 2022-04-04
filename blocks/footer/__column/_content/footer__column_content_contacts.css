@@ -1,0 +1,11 @@
+.footer__column_content_contacts {
+  grid-area: contacts;
+  flex-direction: column;
+  max-width: 236px;
+}
+
+@media (min-width: 768px) {
+  .footer__column_content_contacts {
+    justify-content: space-between;
+  }
+}

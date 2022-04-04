@@ -65,50 +65,50 @@ const dataPublications = [{
 ]
 
 const swiper = new Swiper('.publications__body', {
-  
+
   autoplay: {
-      delay: 2500,
+    delay: 2500,
   },
   navigation: {
-      nextEl: '.publications__slider-button_type_next',
-      prevEl: '.publications__slider-button_type_prev', 
+    nextEl: '.publications__slider-button_type_next',
+    prevEl: '.publications__slider-button_type_prev',
   },
   allowTouchMove: true,
   breakpoints: {
-      320: {
-          slidesPerView: 1,
+    320: {
+      slidesPerView: 1,
+    },
+    570: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      grid: {
+        fill: "row",
+        rows: 2,
       },
-      570: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-          grid: {
-              fill:"row",
-              rows: 2,
-          },
-          autoplay: false,
-      },
-      1100: {
-          slidesPerView: 3, 
-          spaceBetween: 33,
+      autoplay: false,
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 33,
 
-          grid: {
-              fill:"row",
-              rows: 2,
-          },
-          autoplay: false,
-      }
+      grid: {
+        fill: "row",
+        rows: 2,
+      },
+      autoplay: false,
+    }
   },
 
   pagination: {
-      clickable: true,
-      el: '.swiper-pagination',
+    clickable: true,
+    el: '.swiper-pagination',
   },
 })
 
 const publicationCards = document.querySelector(".publications__slider");
 const publictionTemplate = publicationCards.querySelector(".publications__template");
 
-dataPublications.forEach(publication=>{
+dataPublications.forEach(publication => {
   const clonePublication = publictionTemplate.content.querySelector(".publication").cloneNode(true);
   const publicationImage = clonePublication.querySelector(".publication__picture");
 

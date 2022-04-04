@@ -1,0 +1,24 @@
+.footer__center-description {
+  grid-area: description;
+  max-width: 204px;
+  margin: 0;
+  display: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.67;
+}
+
+@media (min-width: 768px) {
+  .footer__center-description {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__center-description {
+    max-width: 100%;
+    margin-bottom: 8px;
+    line-height: 1.36;
+  }
+}

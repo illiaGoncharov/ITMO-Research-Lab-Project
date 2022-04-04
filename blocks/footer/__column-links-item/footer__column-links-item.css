@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+  .footer__column-links-item {
+    margin-bottom: 8px;
+  }
+  .footer__column-links-item:last-of-type {
+    margin-bottom: 0;
+  }
+}

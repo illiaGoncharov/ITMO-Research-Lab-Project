@@ -1,0 +1,15 @@
+.footer__info {
+  grid-area: info;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+}
+
+@media (min-width: 1140px) {
+  .footer__info {
+    font-size: 14px;
+    line-height: 1.36;
+  }
+}
