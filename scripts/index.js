@@ -157,3 +157,23 @@ const swiperTeam = new Swiper(".team__cards", {
   }
 });
 
+const aspirant = document.querySelector('#aspirant')
+const magistr = document.querySelector('#magistr')
+const magistrButton = document.querySelector('#magistr__button')
+const aspirantButton = document.querySelector('#aspirant__button')
+
+const aspirantOnClick = () => {
+  aspirant.classList.add('educate__programs_active')
+  magistr.classList.remove('educate__programs_active')
+  magistrButton.classList.remove('educate__button_active')
+  aspirantButton.classList.add('educate__button_active')
+}
+const magistrOnClick = () => {
+  aspirant.classList.remove('educate__programs_active')
+  magistr.classList.add('educate__programs_active')
+  magistrButton.classList.add('educate__button_active')
+  aspirantButton.classList.remove('educate__button_active')
+}
+
+aspirantButton.addEventListener('click', aspirantOnClick)
+magistrButton.addEventListener('click', magistrOnClick)
