@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .team__occupation {
     font-size: 14px;
     line-height: 1.35;

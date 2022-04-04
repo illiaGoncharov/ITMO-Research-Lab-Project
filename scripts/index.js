@@ -142,6 +142,10 @@ const swiperTeam = new Swiper(".team__cards", {
       spaceBetween: 30,
 
     },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
     1440: {
       slidesPerView: 4,
       spaceBetween: 30,
