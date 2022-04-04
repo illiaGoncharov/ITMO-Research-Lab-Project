@@ -1,0 +1,23 @@
+.popup__header {
+    margin: 16px 0 0 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+@media (min-width: 768px) {
+    .popup__header {
+        margin: 27px 3.8% 3.8% 3.8%;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+
+
+@media (min-width: 1100px) {
+    .popup__header {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
