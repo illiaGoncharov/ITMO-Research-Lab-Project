@@ -1,0 +1,10 @@
+.team__cards {
+  margin: 0;
+  overflow:unset;
+}
+
+@media (min-width: 1440px) {
+  .team__cards {
+    overflow: hidden;
+  }
+}
