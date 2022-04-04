@@ -177,3 +177,62 @@ const magistrOnClick = () => {
 
 aspirantButton.addEventListener('click', aspirantOnClick)
 magistrButton.addEventListener('click', magistrOnClick)
+
+
+// popup
+const labPopup = document.querySelector('.popup__lab')
+
+const industrialFirst = document.querySelector('.industrial__card-1')
+const industrialSecond = document.querySelector('.industrial__card-2')
+const industrialThird = document.querySelector('.industrial__card-3')
+const industrialFourth = document.querySelector('.industrial__card-4')
+
+function findHeader(item) {
+  return item.querySelector('.industrial__card-title').textContent
+}
+
+const industrialFirstButton = industrialFirst.querySelector('.industrial__card-button')
+const industrialSecondButton = industrialSecond.querySelector('.industrial__card-button')
+const industrialThirdButton = industrialThird.querySelector('.industrial__card-button')
+const industrialFourthButton = industrialFourth.querySelector('.industrial__card-button')
+
+function openPopup(popup, header) {
+  popup.classList.add('popup_opened')
+  document.addEventListener("keydown", closeEsc);
+  popup.addEventListener("click", closeOverlay);
+  popup.querySelector('.popup__close').addEventListener('click', closeCross)
+  popup.querySelector('.popup__header').textContent = header
+};
+
+function closePopup(popup) {
+  popup.classList.remove('popup_opened')
+  document.removeEventListener("keydown", closeEsc);
+  popup.removeEventListener("click", closeOverlay);
+  popup.querySelector('.popup__close').removeEventListener('click', closeCross)
+  popup.querySelector('.popup__header').textContent = ''
+};
+
+function closeOverlay(event) {
+  const popup = document.querySelector('.popup_opened')
+  if (event.target === popup) {
+    closePopup(popup)
+  }
+}
+
+function closeEsc(event) {
+  if (event.key === "Escape") {
+    const popup = document.querySelector(".popup_opened");
+    closePopup(popup);
+  }
+}
+
+function closeCross() {
+  const popup = document.querySelector(".popup_opened");
+  closePopup(popup);
+}
+
+industrialFirstButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialFirst)))
+industrialSecondButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialSecond)))
+industrialThirdButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialThird)))
+industrialFourthButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialFourth)))
+

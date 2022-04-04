@@ -1,0 +1,27 @@
+.popup__box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 1100px;
+    margin: 0 auto 0;
+    width: 93.75%;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+
+@media (min-width: 768px) {
+    .popup__box {
+        display: grid;
+        grid-template-columns: 29% 1fr;
+        grid-template-rows: 30px 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .popup__box {
+
+    }
+}
