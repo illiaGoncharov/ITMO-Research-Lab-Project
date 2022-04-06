@@ -2,21 +2,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 288px;
   margin-bottom: 34px;
-
 }
 
 @media (min-width : 768px) {
   .team__persons {
-    max-width: 690px;
     margin-bottom: 44px;
   }
 }
 
 @media (min-width : 1200px) {
   .team__persons {
-    max-width: 1110px;
     margin-bottom: 51px;
   }
 }
