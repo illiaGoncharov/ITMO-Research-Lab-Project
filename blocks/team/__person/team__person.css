@@ -1,5 +1,4 @@
 .team__person {
-  max-width: 140px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -11,7 +10,6 @@
 
 @media (min-width: 768px) {
   .team__person {
-    max-width: 210px;
     border-radius: 8.24px;
 
   }
@@ -19,7 +17,6 @@
 
 @media (min-width: 1200px) {
   .team__person {
-    max-width: 255px;
     border-radius: 10px;
 
   }

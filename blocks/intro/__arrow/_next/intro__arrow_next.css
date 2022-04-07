@@ -1,0 +1,25 @@
+.intro__arrow_next {
+  display: none;
+}
+
+.intro__arrow_next::after {
+  content: '';
+}
+
+@media (min-width: 1400px) {
+  .intro__arrow_next {
+    width: 60px;
+    height: 60px;
+    background-image: url('../../../../images/arrow-rigth.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 4.18%;
+    top: 78%;
+    display: flex;
+  }
+
+  .intro__arrow_next::after {
+    content: '';
+
+  }
+}

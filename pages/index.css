@@ -14,6 +14,7 @@
 @import url(../blocks/intro/__title/intro__title.css);
 @import url(../blocks/intro/__title-min/intro__title-min.css);
 @import url(../blocks/intro/__subtitle/intro__subtitle.css);
+@import url(../blocks/intro/__body/intro__body.css);
 @import url(../blocks/intro/__button/intro__button.css);
 @import url(../blocks/intro/__about-us-title/intro__about-us-title.css);
 @import url(../blocks/intro/__about-us-text/intro__about-us-text.css);
@@ -24,8 +25,9 @@
 @import url(../blocks/intro/__about-us-card-title/intro__about-us-card-title.css);
 @import url(../blocks/intro/__about-us-card-polpska/intro__about-us-card-polpska.css);
 @import url(../blocks/intro/__about-us-card-text/intro__about-us-card-text.css);
-@import url(../blocks/intro/__about-u-strel-right/intro__about-u-strel-right.css);
-@import url(../blocks/intro/__about-us-strel-left/intro__about-us-strel-left.css);
+@import url(../blocks/intro/__arrow/intro__arrow.css);
+@import url(../blocks/intro/__arrow/_back/intro__arrow_back.css);
+@import url(../blocks/intro/__arrow/_next/intro__arrow_next.css);
 @import url(../blocks/intro/__about-us-toshki/intro__about-us-toshki.css);
 
 @import url(../blocks/industrial/industrial.css);
@@ -71,6 +73,7 @@
 @import url(../blocks/publications/__body/publications__body.css);
 @import url(../blocks/publications/__title/publications__title.css);
 @import url(../blocks/publications/__points/publications__points.css);
+@import url(../blocks/publications/__slider/publications__slider.css);
 @import url(../blocks/publications/__slider-button/publications__slider-button.css);
 @import url(../blocks/publications/__slider-button/_type/publications__slider-button_type_next.css);
 @import url(../blocks/publications/__slider-button/_type/publications__slider-button_type_prev.css);
@@ -94,6 +97,7 @@
 
 @import url(../blocks/swiper-pagination-bullet/swiper-pagination-bullet.css);
 @import url(../blocks/swiper-pagination-bullet-active/swiper-pagination-bullet-active.css);
+@import url(../blocks/intro/__bullet/intro__bullet.css);
 
 @import url(../blocks/team/team.css);
 @import url(../blocks/team/__header/team__header.css);
