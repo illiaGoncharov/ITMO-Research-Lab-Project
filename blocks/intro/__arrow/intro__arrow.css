@@ -1,0 +1,8 @@
+.intro__arrow {
+    background-color: #001328;
+    border-radius: 36px;
+    top: 82%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgb(224 240 255 / 10%);
+  }

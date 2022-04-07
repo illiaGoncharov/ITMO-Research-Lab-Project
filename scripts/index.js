@@ -258,7 +258,7 @@ const settingsSwiperPublication = {
       },
     }
   },
-}
+};
 
 const settingsSwiperTeam = {
   pagination: {
@@ -285,7 +285,33 @@ const settingsSwiperTeam = {
       spaceBetween: 30,
     },
   }
-}
+};
+
+const settingsSwiperAboutUs = {
+  pagination: {
+    el: '.intro__about-us-toshki',
+    clickable: true,
+    bulletClass: 'swiper-pagination-bullet intro__bullet'
+  },
+  navigation: {
+    nextEl: '.intro__arrow_next',
+    prevEl: '.intro__arrow_back',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    570: {
+      slidesPerView: 2 ,
+      spaceBetween: 30,
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 22,
+    },
+  }
+};
 
 const updateSwiper = (selector, settings) => {
   return new Swiper(selector, settings)
@@ -295,11 +321,13 @@ window.addEventListener('resize', () => {
   if (window.innerWidth <= 570 && window.innerWidth >= 550) {
     updateSwiper('.publications__body', settingsSwiperPublication);
     updateSwiper('.team__cards', settingsSwiperTeam);
+    updateSwiper('.intro__body', settingsSwiperAboutUs);
   }
 })
 
 updateSwiper('.publications__body', settingsSwiperPublication);
 updateSwiper('.team__cards', settingsSwiperTeam);
+updateSwiper('.intro__body', settingsSwiperAboutUs);
 
 const publicationCards = document.querySelector('.publications__slider');
 const publictionTemplate = publicationCards.querySelector('.publications__template');
