@@ -8,5 +8,6 @@
 @media (min-width: 1440px) {
   .footer__social {
     padding: 0;
+    margin-bottom: 12px;
   }
 }

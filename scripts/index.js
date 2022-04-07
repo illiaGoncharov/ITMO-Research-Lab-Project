@@ -1,3 +1,7 @@
+import {
+  enableValidation
+} from './components/validate.js';
+
 const dataPublications = [{
   image: './images/picture/publication_Topic-driven Ensemble for Online Advertising Generation.png',
   title: 'Topic-driven Ensemble for Online Advertising Generation',
@@ -427,3 +431,13 @@ industrialSecondButton.addEventListener('click', () => openPopup(labPopup, findH
 industrialThirdButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialThird)))
 industrialFourthButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialFourth)))
 
+// ** Начальная инициализация
+// Включение валидации полей ввода форм
+enableValidation({
+  formSelector: 'form',
+  inputSelector: 'form__input',
+  inputErrorClass: 'form__input_type_error',
+  submitButtonSelector: 'form__send-btn',
+  inactiveButtonClass: 'form__send-btn_disabled',
+  errorClass: 'form__input-error_active'
+});

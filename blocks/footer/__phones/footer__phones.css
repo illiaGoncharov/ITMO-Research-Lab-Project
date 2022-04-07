@@ -9,6 +9,12 @@
   list-style-type: none;
 }
 
+@media (min-width: 768px) {
+  .footer__phones {
+    margin-bottom: 12px;
+  }
+}
+
 @media (min-width: 1440px) {
   .footer__phones {
     font-size: 14px;

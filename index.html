@@ -371,6 +371,89 @@
                 </div>
             </section>
 
+          <section class="communication">
+            <div class="communication__container">
+              <h2 class="communication__title">Всегда на связи</h2>
+              <p class="communication__description">
+                По&nbsp;всем интересующим вас вопросам вы всегда можете обратиться по&nbsp;указанным телефонам, написать
+                на&nbsp;почту или оставить свое сообщение через форму обратной связи.
+              </p>
+              <form
+                name="communication-form"
+                action="#"
+                method="post"
+                autocomplete="off"
+                class="communication__form form"
+                novalidate
+              >
+              <div class="form__group">
+                <input
+                  class="communication__input form__input"
+                  id="user-name"
+                  name="userName"
+                  placeholder="Имя"
+                  type="text"
+                  minlength="2"
+                  maxlength="40"
+                />
+                <span class="user-name-error form__input-error"></span>
+              </div>
+              <div class="form__group">
+                <input
+                  class="communication__input form__input"
+                  id="user-surname"
+                  name="userSurname"
+                  placeholder="Фамилия"
+                  type="text"
+                  minlength="2"
+                  maxlength="40"
+                />
+                <span class="user-surname-error form__input-error"></span>
+              </div> 
+              <div class="form__group">
+                <input
+                  class="communication__input form__input"
+                  id="user-phone-number"
+                  name="userPhoneNumber"
+                  placeholder="Телефон"
+                  type="tel"
+                />
+                <span class="user-phone-number-error form__input-error"></span>
+              </div>
+              <div class="form__group">
+                <input
+                  class="communication__input form__input"
+                  id="user-email"
+                  name="userEmail"
+                  placeholder="E-mail"
+                  type="email"
+                  required
+                />
+                <span class="user-email-error form__input-error"></span>
+              </div>
+              <div class="form__group form__group_type_user-message">
+                <textarea
+                  class="communication__text-area form__input"
+                  id="user-message"
+                  name="userMessage"
+                  placeholder="Сообщение"
+                  required
+                  minlength="10"
+                  maxlength="200"
+                ></textarea>
+                <span class="user-message-error form__input-error"></span>
+              </div>
+                <input
+                  class="communication__send-button form__send-btn"
+                  type="submit"
+                  name="messageSend"
+                  value="Отправить"
+                />
+              </form>
+            </div>
+          </section>
+          
+            <!--
             <section class="communication">
                 <div class="communication__container">
                     <h2 class="communication__title">Всегда на связи</h2>
@@ -395,8 +478,9 @@
                     </form>
                 </div>
             </section>
+            -->
         </main>
-
+      
         <footer class="footer">
             <div class="footer__container">
                 <a class="footer__logo">
@@ -553,9 +637,8 @@
         </section>
     </div>
 
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./scripts/index.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
 </body>
 
 </html>

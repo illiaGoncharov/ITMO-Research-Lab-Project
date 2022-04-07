@@ -118,6 +118,7 @@
 @import url(../blocks/working/__text/working__text.css);
 @import url(../blocks/working/__box/working__box.css);
 @import url(../blocks/working/__image/working__image.css);
+
 @import url(../blocks/communication/communication.css);
 @import url(../blocks/communication/__container/communication__container.css);
 @import url(../blocks/communication/__title/communication__title.css);
@@ -161,3 +162,8 @@
 @import url(../blocks/popup/__image/popup__image.css);
 @import url(../blocks/popup/__ul/popup__ul.css);
 @import url(../blocks/popup/__text-li/popup__text-li.css);
+
+@import url(../blocks/form/__group/_type/form__group_type_user-message.css);
+@import url(../blocks/form/__input-error/form__input-error.css);
+@import url(../blocks/form/__input-error/_active/form__input-error_active.css);
+@import url(../blocks/form/__send-btn/_disabled/form__send-btn_disabled.css);

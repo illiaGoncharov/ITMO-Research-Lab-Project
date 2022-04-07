@@ -28,8 +28,8 @@
 
 @media (min-width: 1140px) {
   .footer__container {
-    grid-template-columns: 280px 94px 94px 206px;
-    column-gap: calc((100% - 674px) / 3);
+    grid-template-columns: 263px 94px 94px 206px;
+    column-gap: calc((100% - 657px) / 3);
     grid-template-areas:
       "logo . . ."
       "info about education contacts"
