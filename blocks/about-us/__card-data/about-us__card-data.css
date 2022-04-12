@@ -1,0 +1,16 @@
+.about-us__card-data{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    color: #009FAC;
+}
+@media screen and (min-width: 768px) {
+    .about-us__card-data{
+        font-size: 12px;
+        line-height: 17px;
+    }
+}

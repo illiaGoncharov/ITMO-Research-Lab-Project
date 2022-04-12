@@ -1,10 +1,14 @@
-.header{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.header {
     display: flex;
+    justify-content: center;
     align-items: center;
     min-width: 320px;
-    height: calc(44px + 36 * (100vw - 320px) / 1120);
+    height: 80px;
     background: #000D26;
+}
+
+@media screen and (max-width: 1240px) {
+    .header {
+        position: relative;
+    }
 }

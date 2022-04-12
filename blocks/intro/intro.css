@@ -1,12 +1,13 @@
-.intro{
+.intro {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     min-width: 320px;
-    min-height: 412px;
     position: relative;
+    padding-bottom: 125px;
 }
-.intro::before{
+
+.intro::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,15 +20,16 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #001337;
-    
-    
-
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px){
     .intro::before {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
-}
+    .intro {
+        padding-bottom: 60px;
+    }
+}   

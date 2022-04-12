@@ -1,0 +1,27 @@
+.about-us__subtitle {
+    max-width: 910px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-bottom: calc(32px + 13 * (100vw - 320px) / 448);
+    letter-spacing: 0.1px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us__subtitle {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .about-us__subtitle {
+        max-width: 1110px;
+    }
+}

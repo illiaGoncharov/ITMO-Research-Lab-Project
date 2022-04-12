@@ -1,19 +1,24 @@
-.industrial__cards{
-    display: grid;
-    gap: calc(8px + 22 * (100vw - 320px) / 448);
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+.industrial__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 0 auto;
+    gap: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1240px) {
     .industrial__cards {
-        margin-top: 30px;
+        justify-content: space-around;
     }
 }
-@media screen and (min-width: 1440px) {
+
+@media screen and (max-width: 768px) {
     .industrial__cards {
-        margin-top: 45px;
-        gap: 30px;
-        margin-left: 36px;
-        
+        justify-content: space-around;
+        gap: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

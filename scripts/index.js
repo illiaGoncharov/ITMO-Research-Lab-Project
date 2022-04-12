@@ -293,14 +293,15 @@ const settingsSwiperTeam = {
 
 const settingsSwiperAboutUs = {
   pagination: {
-    el: '.intro__about-us-toshki',
+    el: '.about-us__bullets',
     clickable: true,
     bulletClass: 'swiper-pagination-bullet intro__bullet'
   },
   navigation: {
-    nextEl: '.intro__arrow_next',
-    prevEl: '.intro__arrow_back',
+    nextEl: '.about-us__arrow_type_next',
+    prevEl: '.about-us__arrow_type_back',
   },
+  
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -325,13 +326,13 @@ window.addEventListener('resize', () => {
   if (window.innerWidth <= 570 && window.innerWidth >= 550) {
     updateSwiper('.publications__body', settingsSwiperPublication);
     updateSwiper('.team__cards', settingsSwiperTeam);
-    updateSwiper('.intro__body', settingsSwiperAboutUs);
+    updateSwiper('.about-us__swiper', settingsSwiperAboutUs);
   }
 })
 
 updateSwiper('.publications__body', settingsSwiperPublication);
 updateSwiper('.team__cards', settingsSwiperTeam);
-updateSwiper('.intro__body', settingsSwiperAboutUs);
+updateSwiper('.about-us__swiper', settingsSwiperAboutUs);
 
 const publicationCards = document.querySelector('.publications__slider');
 const publictionTemplate = publicationCards.querySelector('.publications__template');
@@ -349,7 +350,6 @@ dataPublications.forEach(publication => {
 
   publicationCards.append(clonePublication);
 })
-
 
 
 const aspirant = document.querySelector('#aspirant')

@@ -1,16 +1,21 @@
-.industrial{
+.industrial {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding-left: calc(16px + 23 * (100vw - 320px) / 448);
-    padding-right: calc(16px + 23 * (100vw - 320px) / 448);
-    padding-top: calc(40px + 20 * (100vw - 320px) / 448);
     padding-bottom: 40px;
     background: #E0F0FF;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
-@media screen and (min-width: 1440px) {
+
+@media screen and (max-width: 1240px) {
     .industrial{
-        padding-left: 129px;
-        padding-right: 165px;
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .industrial{
+        padding-top: 40px;
     }
 }

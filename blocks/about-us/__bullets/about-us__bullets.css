@@ -1,0 +1,19 @@
+.about-us__bullets{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 100px !important;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 768px) {
+    .about-us__bulltes{
+        margin-top: 21px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .about-us__bulltes{
+        margin-top: 26.5px;
+        padding-bottom: 80px;
+    }
+}
