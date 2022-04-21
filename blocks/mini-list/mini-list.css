@@ -1,0 +1,11 @@
+.mini-list{
+    display: none;
+    margin: 13px 0;
+    padding: 0;
+    list-style-type: none;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}

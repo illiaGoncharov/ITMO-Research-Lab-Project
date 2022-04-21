@@ -1,0 +1,5 @@
+.navigation__button{
+    background-image: url(../../../images/close1.svg);
+    position: static;
+    background-color: #000D26;
+}

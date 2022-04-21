@@ -7,7 +7,7 @@
     background: #000D26;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (min-width: 1240px) {
     .header {
         position: relative;
     }

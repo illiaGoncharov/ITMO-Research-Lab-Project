@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -12,26 +12,26 @@
 
 <body class="body">
     <div class="page">
-        
+
         <header class="header">
-            <img class="header__burger-icon" src="./images/header/Burger.svg" alt="Меню" onclick="alert('sup')">
+            <img class="header__burger-icon" src="./images/header/Burger.svg" alt="Меню">
             <img class="header__logo" src="./images/header/logo.svg" alt="Логотип">
             <nav class="header__nav">
-                <a class="header__nav-item header__nav-item_active" href="#">О нас</a>
-                <a class="header__nav-item" href="#">Лаборатория</a>
-                <a class="header__nav-item" href="#">Проекты</a>
-                <a class="header__nav-item" href="#">Образование</a>
-                <a class="header__nav-item" href="#">Публикации</a>
-                <a class="header__nav-item" href="#">Команда</a>
-                <a class="header__nav-item" href="#">Связаться</a>
+                <a class="header__nav-item header__nav-item_active" href="#about">О нас</a>
+                <a class="header__nav-item" href="#lab">Лаборатория</a>
+                <a class="header__nav-item" href="#projects">Проекты</a>
+                <a class="header__nav-item" href="#educate">Образование</a>
+                <a class="header__nav-item" href="#publications">Публикации</a>
+                <a class="header__nav-item" href="#team">Команда</a>
+                <a class="header__nav-item" href="#contact">Связаться</a>
             </nav>
         </header>
-        
+
         <main class="main">
             <section class="intro">
                 <div class="intro__wrapper">
                     <h1 class="intro__title">
-                        Когнитивные технологии, 
+                        Когнитивные технологии,
                         <span class="intro__title-min">машинное обучение</span>
                     </h1>
                     <div>
@@ -41,9 +41,11 @@
                 </div>
             </section>
 
-            <section class="about-us">
+            <section class="about-us" id="about">
                 <h2 class="about-us__title">Несколько слов о нас </h2>
-                <p class="about-us__subtitle">Национальный центр когнитивных разработок – центр национальной технологической инициативы (НТИ), получивший государственную поддержку по направлению «Технологии машинного обучения и когнитивные технологии».</p>
+                <p class="about-us__subtitle">Национальный центр когнитивных разработок – центр национальной
+                    технологической инициативы (НТИ), получивший государственную поддержку по направлению «Технологии
+                    машинного обучения и когнитивные технологии».</p>
                 <div class="about-us__swiper swiper swiper-initialized swiper-pointer-events">
                     <div class="about-us__cards swiper-wrapper">
                         <div class="about-us__card swiper-slide">
@@ -62,7 +64,7 @@
                                 В&nbsp;подготовке
                                 команды участвовали
                                 сотрудники лаборатории.</p>
-                        </div>                        
+                        </div>
                         <div class="about-us__card swiper-slide">
                             <img class="about-us__pin" src="./images/intro/knopka.svg" alt="Кнопка">
                             <p class="about-us__card-data">Понедельник, 5 июля 2021г</p>
@@ -141,18 +143,21 @@
                 <button class="about-us__arrow about-us__arrow_type_next swiper-button-next"></button>
             </section>
 
-            <section class="industrial">
+            <section class="industrial" id="lab">
                 <h2 class="industrial__title">INDUSTRIAL AI RESEARCH LAB</h2>
                 <div class="industrial__main">
                     <img class="industrial__img" src="./images/industrial/man.jpg" alt="Мужчины за комьютором">
                     <img class="industrial__img" src="./images/industrial/indMan.jpg" alt="Мужчины за комьютором">
                     <div class="industrial__text-wrapper">
                         <p class="industrial__text">
-                            Центр национальной технологической инициативы (НТИ), получивший государственную поддержку по направлению «Технологии машинного обучения и когнитивные технологии». 
+                            Центр национальной технологической инициативы (НТИ), получивший государственную поддержку по
+                            направлению «Технологии машинного обучения и когнитивные технологии».
                         </p>
                         <p class="industrial__text">
-                            Мы изучаем проблемы и выявляем, когда мы работаем вместе с нашими клиентами, новые решения находят, не задумываясь. Работая таким образом 
-                            и проявляя гибкость, мы можем поддерживать новый подход для удовлетворения потребностей наших клиентов.
+                            Мы изучаем проблемы и выявляем, когда мы работаем вместе с нашими клиентами, новые решения
+                            находят, не задумываясь. Работая таким образом
+                            и проявляя гибкость, мы можем поддерживать новый подход для удовлетворения потребностей
+                            наших клиентов.
                         </p>
                     </div>
                     <img class="industrial__side-icon" src="./images/industrial/molecula.svg" alt="Молекула">
@@ -196,11 +201,9 @@
                     </div>
                 </div>
             </section>
-            <section class="lab">
+            <section class="projects" id="projects">
             </section>
-            <section class="projects">
-            </section>
-            <section class="educate">
+            <section class="educate" id="educate">
                 <div class="educate__body">
                     <h2 class="title educate__title">Образование</h2>
                     <p class="subtitle educate__subtitle">В образовательной деятельности НЦКР активно использует
@@ -261,7 +264,7 @@
                 </div>
             </section>
 
-            <section class="publications">
+            <section class="publications" id="publications">
                 <div class="publications__body swiper">
                     <h2 class="title publications__title">Публикации</h2>
                     <div class="publications__slider swiper-wrapper">
@@ -329,7 +332,7 @@
                 <button class="button publications__slider-button publications__slider-button_type_next"></button>
             </section>
 
-            <section class="team">
+            <section class="team" id="team">
                 <h2 class="team__header">НАША КОМАНДА</h2>
                 <div class="team__cards swiper">
                     <ul class="team__persons swiper-wrapper">
@@ -405,88 +408,47 @@
                 </div>
             </section>
 
-          <section class="communication">
-            <div class="communication__container">
-              <h2 class="communication__title">Всегда на связи</h2>
-              <p class="communication__description">
-                По&nbsp;всем интересующим вас вопросам вы всегда можете обратиться по&nbsp;указанным телефонам, написать
-                на&nbsp;почту или оставить свое сообщение через форму обратной связи.
-              </p>
-              <form
-                name="communication-form"
-                action="#"
-                method="post"
-                autocomplete="off"
-                class="communication__form form"
-                novalidate
-              >
-              <div class="form__group">
-                <input
-                  class="communication__input form__input"
-                  id="user-name"
-                  name="userName"
-                  placeholder="Имя"
-                  type="text"
-                  minlength="2"
-                  maxlength="40"
-                />
-                <span class="user-name-error form__input-error"></span>
-              </div>
-              <div class="form__group">
-                <input
-                  class="communication__input form__input"
-                  id="user-surname"
-                  name="userSurname"
-                  placeholder="Фамилия"
-                  type="text"
-                  minlength="2"
-                  maxlength="40"
-                />
-                <span class="user-surname-error form__input-error"></span>
-              </div> 
-              <div class="form__group">
-                <input
-                  class="communication__input form__input"
-                  id="user-phone-number"
-                  name="userPhoneNumber"
-                  placeholder="Телефон"
-                  type="tel"
-                />
-                <span class="user-phone-number-error form__input-error"></span>
-              </div>
-              <div class="form__group">
-                <input
-                  class="communication__input form__input"
-                  id="user-email"
-                  name="userEmail"
-                  placeholder="E-mail"
-                  type="email"
-                  required
-                />
-                <span class="user-email-error form__input-error"></span>
-              </div>
-              <div class="form__group form__group_type_user-message">
-                <textarea
-                  class="communication__text-area form__input"
-                  id="user-message"
-                  name="userMessage"
-                  placeholder="Сообщение"
-                  required
-                  minlength="10"
-                  maxlength="200"
-                ></textarea>
-                <span class="user-message-error form__input-error"></span>
-              </div>
-                <input
-                  class="communication__send-button form__send-btn"
-                  type="submit"
-                  name="messageSend"
-                  value="Отправить"
-                />
-              </form>
-            </div>
-          </section>
-          
+            <section class="communication" id="contact">
+                <div class="communication__container">
+                    <h2 class="communication__title">Всегда на связи</h2>
+                    <p class="communication__description">
+                        По&nbsp;всем интересующим вас вопросам вы всегда можете обратиться по&nbsp;указанным телефонам,
+                        написать
+                        на&nbsp;почту или оставить свое сообщение через форму обратной связи.
+                    </p>
+                    <form name="communication-form" action="#" method="post" autocomplete="off"
+                        class="communication__form form" novalidate>
+                        <div class="form__group">
+                            <input class="communication__input form__input" id="user-name" name="userName"
+                                placeholder="Имя" type="text" minlength="2" maxlength="40" />
+                            <span class="user-name-error form__input-error"></span>
+                        </div>
+                        <div class="form__group">
+                            <input class="communication__input form__input" id="user-surname" name="userSurname"
+                                placeholder="Фамилия" type="text" minlength="2" maxlength="40" />
+                            <span class="user-surname-error form__input-error"></span>
+                        </div>
+                        <div class="form__group">
+                            <input class="communication__input form__input" id="user-phone-number"
+                                name="userPhoneNumber" placeholder="Телефон" type="tel" />
+                            <span class="user-phone-number-error form__input-error"></span>
+                        </div>
+                        <div class="form__group">
+                            <input class="communication__input form__input" id="user-email" name="userEmail"
+                                placeholder="E-mail" type="email" required />
+                            <span class="user-email-error form__input-error"></span>
+                        </div>
+                        <div class="form__group form__group_type_user-message">
+                            <textarea class="communication__text-area form__input" id="user-message" name="userMessage"
+                                placeholder="Сообщение" required minlength="10" maxlength="200"></textarea>
+                            <span class="user-message-error form__input-error"></span>
+                        </div>
+                        <input class="communication__send-button form__send-btn" type="submit" name="messageSend"
+                            value="Отправить" />
+                    </form>
+                </div>
+            </section>
+
             <!--
             <section class="communication">
                 <div class="communication__container">
@@ -514,7 +476,7 @@
             </section>
             -->
         </main>
-      
+
         <footer class="footer">
             <div class="footer__container">
                 <a class="footer__logo">
@@ -535,7 +497,7 @@
                     <nav>
                         <ul class="footer__column-links">
                             <li class="footer__column-links-item">
-                                <a class="footer__link" href="#">О нас</a>
+                                <a class="footer__link" href="#about">О нас</a>
                             </li>
                             <li class="footer__column-links-item">
                                 <a class="footer__link" href="#">Главная</a>
@@ -626,6 +588,29 @@
                 <p class="footer__author">Сделано студентами Яндекс. Практикума</p>
             </div>
         </footer>
+        <section class="popup popup__navigation">
+            <div class="popup__body">
+            <div class="navigation__header">
+                <img class="navigation__logo" src="./images/header/logo.svg" alt="Логотип">
+                <button class="popup__close navigation__button"></button>
+            </div>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#lab">Лаборатория</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#projects">Проекты</a></li>
+                <li class="navigation__item-more">
+                    <p class="navigation__item navigation__item-expander">Образование</p>
+                    <ul class="navigation__mini-list mini-list">
+                        <a class="navigation__link mini-list__link" href="#educate"><li class="mini-list__item" id="link-magistr">Магистратура</li></a>
+                        <a class="navigation__link" href="#educate"><li class="mini-list__item" id="link-aspirant">Аспирантура</li></a>
+                    </ul>
+                </li>
+                <li class="navigation__item"><a class="navigation__link" href="#publications">Публикации</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#team">Команда</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#contact">Связаться</a></li>
+            </ul>
+        </div>
+        </section>
         <section class="popup popup__lab">
             <div class="popup__box">
                 <button class="popup__close"></button>
@@ -671,8 +656,8 @@
         </section>
     </div>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script type="module" src="./scripts/index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
 </body>
 
 </html>

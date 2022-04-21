@@ -16,11 +16,16 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 600px){
+    .popup__close {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 @media (min-width: 768px) {
     .popup__close {
         top: 20px;
         right: 20px;
-        width: 32px;
-        height: 32px;
     }
 }
