@@ -336,47 +336,6 @@
                 <h2 class="team__header">НАША КОМАНДА</h2>
                 <div class="team__cards swiper">
                     <ul class="team__persons swiper-wrapper">
-                        <li class="team__person swiper-slide">
-                            <img src="./images/Team/photo.png" alt="фото" class="team__photo">
-                            <h3 class="team__name">Бобцов Алексей Алексеевич</h3>
-                            <p class="team__occupation">Директор, ДТН</p>
-                        </li>
-                        <li class="team__person swiper-slide">
-                            <img src="./images/Team/photo-1.png" alt="фото" class="team__photo">
-                            <h3 class="team__name">Буханоский
-                                Александр Валерьевич</h3>
-                            <p class="team__occupation">Директор, ДТН</p>
-                        </li>
-                        <li class="team__person swiper-slide">
-                            <img src="./images/Team/photo-2.png" alt="фото" class="team__photo">
-                            <h3 class="team__name">Муромцев
-                                Дмитрий Ильич</h3>
-                            <p class="team__occupation">Руководитель, КТН</p>
-                        </li>
-                        <li class="team__person swiper-slide">
-                            <img src="./images/Team/photo-3.png" alt="фото" class="team__photo">
-                            <h3 class="team__name">Матвеев
-                                Юрий Николаевич</h3>
-                            <p class="team__occupation">Руководитель, ДТН</p>
-                        </li>
-                        <li class="team__person swiper-slide">
-                            <img src="./images/Team/photo-4.png" alt="фото" class="team__photo">
-                            <h3 class="team__name">Шалыто
-                                Анатолий Абрамович</h3>
-                            <p class="team__occupation">Профессор, ДТН</p>
-                        </li>
-                        <li class="team__person swiper-slide">
-                            <img src="./images/Team/photo-5.png" alt="фото" class="team__photo">
-                            <h3 class="team__name">Колюбин
-                                Сергей Алексеевич</h3>
-                            <p class="team__occupation">Начальник, ДТН</p>
-                        </li>
-                        <li class="team__person swiper-slide">
-                            <img src="./images/Team/photo-6.png" alt="фото" class="team__photo">
-                            <h3 class="team__name">Пыркин
-                                Антон Александрович</h3>
-                            <p class="team__occupation">Декан, ДТН</p>
-                        </li>
                     </ul>
                     <div class="team__slide swiper-pagination"></div>
                 </div>
@@ -590,26 +549,30 @@
         </footer>
         <section class="popup popup__navigation">
             <div class="popup__body">
-            <div class="navigation__header">
-                <img class="navigation__logo" src="./images/header/logo.svg" alt="Логотип">
-                <button class="popup__close navigation__button"></button>
+                <div class="navigation__header">
+                    <img class="navigation__logo" src="./images/header/logo.svg" alt="Логотип">
+                    <button class="popup__close navigation__button"></button>
+                </div>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#lab">Лаборатория</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#projects">Проекты</a></li>
+                    <li class="navigation__item-more">
+                        <p class="navigation__item navigation__item-expander">Образование</p>
+                        <ul class="navigation__mini-list mini-list">
+                            <a class="navigation__link mini-list__link" href="#educate">
+                                <li class="mini-list__item" id="link-magistr">Магистратура</li>
+                            </a>
+                            <a class="navigation__link" href="#educate">
+                                <li class="mini-list__item" id="link-aspirant">Аспирантура</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="navigation__item"><a class="navigation__link" href="#publications">Публикации</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#team">Команда</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#contact">Связаться</a></li>
+                </ul>
             </div>
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#lab">Лаборатория</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#projects">Проекты</a></li>
-                <li class="navigation__item-more">
-                    <p class="navigation__item navigation__item-expander">Образование</p>
-                    <ul class="navigation__mini-list mini-list">
-                        <a class="navigation__link mini-list__link" href="#educate"><li class="mini-list__item" id="link-magistr">Магистратура</li></a>
-                        <a class="navigation__link" href="#educate"><li class="mini-list__item" id="link-aspirant">Аспирантура</li></a>
-                    </ul>
-                </li>
-                <li class="navigation__item"><a class="navigation__link" href="#publications">Публикации</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#team">Команда</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#contact">Связаться</a></li>
-            </ul>
-        </div>
         </section>
         <section class="popup popup__lab">
             <div class="popup__box">
@@ -655,6 +618,13 @@
             </div>
         </section>
     </div>
+    <template class="team__template">
+        <li class="team__person swiper-slide">
+            <img src="./images/Team/photo.png" alt="фото" class="team__photo">
+            <h3 class="team__name">Бобцов Алексей Алексеевич</h3>
+            <p class="team__occupation">Директор, ДТН</p>
+        </li>
+    </template>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./scripts/index.js"></script>

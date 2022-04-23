@@ -2,6 +2,8 @@ import {
   enableValidation
 } from './components/validate.js'
 
+import { teamData } from './utils/team.js'
+
 const dataPublications = [{
   image: './images/picture/publication_Topic-driven Ensemble for Online Advertising Generation.png',
   title: 'Topic-driven Ensemble for Online Advertising Generation',
@@ -513,3 +515,20 @@ publicationList.forEach(item => {
   })
 })
 
+// team
+const teamBox = document.querySelector('.team__persons')
+
+teamData.forEach(item => {
+  const teamCard = document.querySelector('.team__template').content.querySelector('.team__person').cloneNode(true)
+  const teamFoto = teamCard.querySelector('.team__photo')
+
+  teamFoto.src = item.image;
+  teamFoto.alt = item.name;
+
+  teamCard.querySelector('.team__occupation').textContent = item.occupation
+  teamCard.querySelector('.team__name').textContent = item.name
+
+  teamBox.append(teamCard)
+  
+
+})
