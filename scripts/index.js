@@ -301,14 +301,14 @@ const settingsSwiperAboutUs = {
     nextEl: '.about-us__arrow_type_next',
     prevEl: '.about-us__arrow_type_back',
   },
-  
+
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 8,
     },
     570: {
-      slidesPerView: 2 ,
+      slidesPerView: 2,
       spaceBetween: 30,
     },
     1100: {
@@ -376,27 +376,21 @@ magistrButton.addEventListener('click', magistrOnClick)
 
 // popup
 const labPopup = document.querySelector('.popup__lab')
-
-const industrialFirst = document.querySelector('.industrial__card-1')
-const industrialSecond = document.querySelector('.industrial__card-2')
-const industrialThird = document.querySelector('.industrial__card-3')
-const industrialFourth = document.querySelector('.industrial__card-4')
-
-function findHeader(item) {
-  return item.querySelector('.industrial__card-title').textContent
-}
-
-const industrialFirstButton = industrialFirst.querySelector('.industrial__card-button')
-const industrialSecondButton = industrialSecond.querySelector('.industrial__card-button')
-const industrialThirdButton = industrialThird.querySelector('.industrial__card-button')
-const industrialFourthButton = industrialFourth.querySelector('.industrial__card-button')
+const industrialCards = document.querySelectorAll('.industrial__card')
+industrialCards.forEach(item => {
+  const industrialButton = item.querySelector('.industrial__card-button')
+  industrialButton.addEventListener('click', () => {
+    const header = item.querySelector('.industrial__card-title').textContent
+    openPopup(labPopup, header)
+  })
+})
 
 function openPopup(popup, header) {
   popup.classList.add('popup_opened')
   document.addEventListener('keydown', closeEsc)
   popup.addEventListener('click', closeOverlay)
   popup.querySelector('.popup__close').addEventListener('click', closeCross)
-  if(header){
+  if (header) {
     const popupHeader = popup.querySelector('.popup__header')
     popupHeader.textContent = ''
     popupHeader.textContent = header
@@ -429,11 +423,6 @@ function closeCross() {
   closePopup(popup)
 }
 
-industrialFirstButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialFirst)))
-industrialSecondButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialSecond)))
-industrialThirdButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialThird)))
-industrialFourthButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialFourth)))
-
 // popup Burger
 const mainPopup = document.querySelector('.popup__navigation')
 const navigationItems = document.querySelectorAll('li.navigation__item')
@@ -447,20 +436,20 @@ navigationItems.forEach(element => { element.addEventListener('click', closeCros
 let bool = true
 
 expanderMiniList.addEventListener('click', () => {
-  if(bool){
+  if (bool) {
     addClassPopupBurger()
-    bool=false
+    bool = false
   }
-  else{
+  else {
     removeClassPopupBurger()
-    bool=true
+    bool = true
   }
 })
 
 function addClassPopupBurger() {
   navigationItems.forEach(element => {
     element.querySelector('.navigation__link').classList.add('navigation__link_disable')
-    element.classList.add('navigation__item_disable') 
+    element.classList.add('navigation__item_disable')
   })
   expanderMiniList.classList.add('navigation__item-expander_disable')
   miniList.classList.add('mini-list_active')
@@ -470,7 +459,7 @@ function addClassPopupBurger() {
 function removeClassPopupBurger() {
   navigationItems.forEach(element => {
     element.querySelector('.navigation__link').classList.remove('navigation__link_disable')
-    element.classList.remove('navigation__item_disable') 
+    element.classList.remove('navigation__item_disable')
   })
   expanderMiniList.classList.remove('navigation__item-expander_disable')
   miniList.classList.remove('mini-list_active')
@@ -500,3 +489,27 @@ enableValidation({
   inactiveButtonClass: 'form__send-btn_disabled',
   errorClass: 'form__input-error_active'
 })
+
+
+
+// Показать/скрыть кнопку на публикации
+const publicationList = document.querySelectorAll('.publication')
+
+publicationList.forEach(item => {
+  const links = item.querySelector('.publication__links')
+  const sites = item.querySelector('.social-sites')
+  item.addEventListener('mouseenter', () => {
+    links.classList.add('publication__links_visible')
+  })
+  item.addEventListener('mouseleave', () => {
+    links.classList.remove('publication__links_visible')
+  })
+  const publicationButton = item.querySelector('.publicaction__button')
+  publicationButton.addEventListener('click', () => {
+    sites.classList.add('social-sites_visible')
+    item.addEventListener('mouseleave', () => {
+      sites.classList.remove('social-sites_visible')
+    })
+  })
+})
+
