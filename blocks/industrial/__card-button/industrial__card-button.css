@@ -1,37 +1,36 @@
-.industrial__card-button{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    font: inherit;
-    color: inherit;
+.industrial__card-button {
     background-color: transparent;
     cursor: pointer;
-    width: 120px;
-    height: 32px;
+    width: 100%;
+    height: 40px;
     font-weight: 600;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 19px;
     text-align: center;
-    letter-spacing: 0.0588372px;
     color: #001337;
     border: 1px solid #001337;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 1440px) {
-    .industrial__card-button{
-        margin: 0px;
-        width: 215px;
-        height: 40px;
-        font-size: 14px;
-        line-height: 19px;
-        border-radius: 10px;
-    }
+.industrial__card:hover .industrial__card-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
 }
-.industrial__card-button:hover{
+
+.industrial__card-button:hover {
     border: none;
-    color: #009FAC;
-    background-color: #FFFFFF;
+    color: #009FAC !important;
+    background-color: #FFFFFF !important;
 }
+
+
+@media screen and (max-width: 1240px) {
+    .industrial__card-button {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+        height: 32px;
+    }
+} 

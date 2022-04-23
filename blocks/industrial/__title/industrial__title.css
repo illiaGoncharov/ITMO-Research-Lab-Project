@@ -8,20 +8,21 @@
     text-align: center;
     color: #000D26;
     text-transform: uppercase;
+    padding-bottom: 60px;
 }
 
 @media screen and (max-width: 1240px) {
     .industrial__title{
+        font-weight: 600;
         font-size: 24px;
-        line-height: 33px;
-        margin-bottom: 30px;
+        line-height: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .industrial__title{
+    .industrial__title {
         font-size: 16px;
         line-height: 22px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 }
