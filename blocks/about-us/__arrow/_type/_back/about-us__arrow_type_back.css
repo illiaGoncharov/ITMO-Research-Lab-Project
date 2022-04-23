@@ -1,0 +1,25 @@
+.about-us__arrow_type_back {
+  width: 60px;
+  height: 60px;
+  background-image: url('../../../../../images/svg/arrow-right.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  border: none;
+}
+
+.about-us__arrow_type_back::after {
+  content: '';
+}
+
+@media screen and (max-width: 768px) {
+  .about-us__arrow_type_back { 
+    display: none;
+  }
+}

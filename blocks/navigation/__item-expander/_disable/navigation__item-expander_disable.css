@@ -1,0 +1,7 @@
+.navigation__item-expander_disable{
+    margin-bottom: 0;
+}
+
+.navigation__item-expander_disable:hover{
+    opacity: 1;
+}

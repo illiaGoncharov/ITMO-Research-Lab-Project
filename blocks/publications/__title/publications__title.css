@@ -1,0 +1,25 @@
+.publications__title{
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 18px;
+}
+
+@media screen and (min-width: 620px){
+    .publications__title{
+        margin-bottom: 40px;
+        
+    }
+}
+
+@media screen and (min-width: 900px){
+    .publications__title{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .publications__title{
+        margin-bottom: 26px;
+    }
+}

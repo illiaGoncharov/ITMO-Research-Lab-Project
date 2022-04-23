@@ -1,0 +1,25 @@
+.communication__title {
+  margin: 0 0 23px 0;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .communication__title {
+    margin-bottom: 37px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .communication__title {
+    font-size: 36px;
+    line-height: 1.89;
+  }
+}

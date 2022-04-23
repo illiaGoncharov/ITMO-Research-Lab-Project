@@ -1,0 +1,12 @@
+
+@media screen and (min-width: 900px) {
+    .publications__slider-button_type_next{
+        right: 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .publications__slider-button_type_next{
+        right: 68px;
+    }
+}

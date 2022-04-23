@@ -1,0 +1,26 @@
+.header__burger-icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+
+    transition: opacity 0.2s linear;
+}
+.header__burger-icon:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+@media screen and (max-width: 1240px) {
+    .header__burger-icon {
+        display: block;
+        position: absolute;
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__burger-icon {
+        display: block;
+        position: absolute;
+        left: 20px;
+    }
+}

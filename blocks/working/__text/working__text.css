@@ -1,0 +1,27 @@
+.working__text {
+  margin: 20px 5% 0 5%;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+
+}
+
+@media (min-width: 768px) {
+  .working__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+    max-width: 690px;
+
+  }
+}
+
+@media (min-width: 1440px) {
+  .working__text {
+    font-size: 18px;
+    line-height: 30px;
+    /* margin: 30px 260px 0 260px; */
+    max-width: 920px;
+  }
+}

@@ -1,0 +1,68 @@
+.industrial__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    height: auto;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    
+    box-shadow: 0px 4px 20px rgba(1, 54, 157, 0.15);
+}
+
+.industrial__card:hover {
+    transform: translateY(-10px);
+    transition: transform 280ms ease-out 50ms; 
+}
+
+.industrial__card:hover{
+    background: #009FAC;
+}
+
+@media screen and (min-width: 320px) {
+    .industrial__card {
+        width: 48%;
+        height: 224px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .industrial__card {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url(../../../images/industrial/foncarddeck.png);
+
+        max-width: 150px;
+        height: 224px;
+    }
+    .industrial__card-2 {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url(../../../images/industrial/indCard2.png);
+    }
+    .industrial__card-3 {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url(../../../images/industrial/indCard3.png);
+    }
+    .industrial__card-4 {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url(../../../images/industrial/indCard4.png);
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .industrial__card {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .industrial__card {
+        min-height: 224px;
+        min-width: 240px;
+        width: 240px;
+        height: 430px;
+    }
+}
+
+
+
+
+

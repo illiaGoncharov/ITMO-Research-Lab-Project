@@ -1,0 +1,15 @@
+.communication__form {
+  display: grid;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .communication__form {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 29px;
+    max-width: 100%;
+  }
+}

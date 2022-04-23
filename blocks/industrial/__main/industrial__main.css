@@ -1,0 +1,28 @@
+.industrial__main {
+    display: flex;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+    .industrial__main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .industrial__main {
+        flex-direction: row-reverse;
+        max-width: 690px;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .industrial__main {
+        flex-direction: row-reverse;
+        justify-content: center;
+        max-width: 1110px;
+        gap: initial;
+    }
+}
