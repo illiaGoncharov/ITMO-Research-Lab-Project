@@ -3,22 +3,29 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1110px;
+    max-width: calc(1110px - 34px);
+    padding-left: 34px;
+    padding-top: 80px;
     margin: 0 auto;
     gap: 30px;
 }
 
 @media screen and (max-width: 1240px) {
     .industrial__cards {
-        justify-content: space-around;
+        box-sizing: border-box;
+        max-width: 690px;
+        gap: 25px;
+        padding: 0;
+        padding-top: 40px;
     }
 }
 
+
 @media screen and (max-width: 768px) {
     .industrial__cards {
-        justify-content: space-around;
-        gap: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
+        width: calc(100vw - 34px);
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 }

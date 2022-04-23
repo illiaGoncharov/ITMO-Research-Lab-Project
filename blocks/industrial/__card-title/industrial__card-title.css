@@ -1,19 +1,21 @@
-.industrial__card-title{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.industrial__card-title {
     font-weight: 600;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
-    letter-spacing: 0.0588372px;
     color: #001337;
-    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
-@media screen and (min-width: 1440px) {
+
+.industrial__card:hover .industrial__card-title {
+    color: white;
+}
+
+@media screen and (max-width: 1240px) {
     .industrial__card-title {
-        font-size: 18px;
-        line-height: 30px;
-        letter-spacing: 0.0588372px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
     }
 }

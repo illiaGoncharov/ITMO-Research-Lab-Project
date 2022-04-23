@@ -1,13 +1,13 @@
-.industrial__card-img{
+.industrial__card-img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 20px;
-    height: 20px;
+    width: 34px;
+    height: 34px;
 }
-@media screen and (min-width: 1440px) {
-    .industrial__card-img{
-        width: 34px;
-        height: 34px;
+@media screen and (max-width: 1240px) {
+    .industrial__card-img {
+        width: 10px; 
+        height: 10px;
     }
 }
