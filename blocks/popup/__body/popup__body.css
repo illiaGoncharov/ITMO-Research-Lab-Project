@@ -1,0 +1,12 @@
+.popup__body{
+    background-color: #000D26;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 134px;
+}
+
+@media screen and (min-width: 600px) {
+    .popup__body{
+        padding-top: 14px;
+    }
+}

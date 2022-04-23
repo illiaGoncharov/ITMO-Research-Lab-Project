@@ -25,6 +25,11 @@
         height: 40px;
     }
 }
+@media screen and (max-width: 520px) {
+    .intro__button {
+        max-width: 288px;
+    }
+}
 @media screen and (max-width: 1240px) {
 
 }

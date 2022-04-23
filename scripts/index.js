@@ -1,6 +1,6 @@
 import {
   enableValidation
-} from './components/validate.js';
+} from './components/validate.js'
 
 const dataPublications = [{
   image: './images/picture/publication_Topic-driven Ensemble for Online Advertising Generation.png',
@@ -262,7 +262,7 @@ const settingsSwiperPublication = {
       },
     }
   },
-};
+}
 
 const settingsSwiperTeam = {
   pagination: {
@@ -289,7 +289,7 @@ const settingsSwiperTeam = {
       spaceBetween: 30,
     },
   }
-};
+}
 
 const settingsSwiperAboutUs = {
   pagination: {
@@ -316,7 +316,7 @@ const settingsSwiperAboutUs = {
       spaceBetween: 22,
     },
   }
-};
+}
 
 const updateSwiper = (selector, settings) => {
   return new Swiper(selector, settings)
@@ -324,31 +324,31 @@ const updateSwiper = (selector, settings) => {
 
 window.addEventListener('resize', () => {
   if (window.innerWidth <= 570 && window.innerWidth >= 550) {
-    updateSwiper('.publications__body', settingsSwiperPublication);
-    updateSwiper('.team__cards', settingsSwiperTeam);
-    updateSwiper('.about-us__swiper', settingsSwiperAboutUs);
+    updateSwiper('.publications__body', settingsSwiperPublication)
+    updateSwiper('.team__cards', settingsSwiperTeam)
+    updateSwiper('.about-us__swiper', settingsSwiperAboutUs)
   }
 })
 
-updateSwiper('.publications__body', settingsSwiperPublication);
-updateSwiper('.team__cards', settingsSwiperTeam);
-updateSwiper('.about-us__swiper', settingsSwiperAboutUs);
+updateSwiper('.publications__body', settingsSwiperPublication)
+updateSwiper('.team__cards', settingsSwiperTeam)
+updateSwiper('.about-us__swiper', settingsSwiperAboutUs)
 
-const publicationCards = document.querySelector('.publications__slider');
-const publictionTemplate = publicationCards.querySelector('.publications__template');
+const publicationCards = document.querySelector('.publications__slider')
+const publictionTemplate = publicationCards.querySelector('.publications__template')
 
 dataPublications.forEach(publication => {
-  const clonePublication = publictionTemplate.content.querySelector('.publication').cloneNode(true);
-  const publicationImage = clonePublication.querySelector('.publication__picture');
+  const clonePublication = publictionTemplate.content.querySelector('.publication').cloneNode(true)
+  const publicationImage = clonePublication.querySelector('.publication__picture')
 
-  publicationImage.src = publication.image;
-  publicationImage.alt = publication.title;
+  publicationImage.src = publication.image
+  publicationImage.alt = publication.title
 
-  clonePublication.querySelector('.publication__title').textContent = publication.title;
-  clonePublication.querySelector('.publication__authors').textContent = publication.authors;
-  clonePublication.querySelector('.publication__text').textContent = publication.text;
+  clonePublication.querySelector('.publication__title').textContent = publication.title
+  clonePublication.querySelector('.publication__authors').textContent = publication.authors
+  clonePublication.querySelector('.publication__text').textContent = publication.text
 
-  publicationCards.append(clonePublication);
+  publicationCards.append(clonePublication)
 })
 
 
@@ -393,19 +393,22 @@ const industrialFourthButton = industrialFourth.querySelector('.industrial__card
 
 function openPopup(popup, header) {
   popup.classList.add('popup_opened')
-  document.addEventListener('keydown', closeEsc);
-  popup.addEventListener('click', closeOverlay);
+  document.addEventListener('keydown', closeEsc)
+  popup.addEventListener('click', closeOverlay)
   popup.querySelector('.popup__close').addEventListener('click', closeCross)
-  popup.querySelector('.popup__header').textContent = header
-};
+  if(header){
+    const popupHeader = popup.querySelector('.popup__header')
+    popupHeader.textContent = ''
+    popupHeader.textContent = header
+  }
+}
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened')
-  document.removeEventListener('keydown', closeEsc);
-  popup.removeEventListener('click', closeOverlay);
+  document.removeEventListener('keydown', closeEsc)
+  popup.removeEventListener('click', closeOverlay)
   popup.querySelector('.popup__close').removeEventListener('click', closeCross)
-  popup.querySelector('.popup__header').textContent = ''
-};
+}
 
 function closeOverlay(event) {
   const popup = document.querySelector('.popup_opened')
@@ -416,20 +419,76 @@ function closeOverlay(event) {
 
 function closeEsc(event) {
   if (event.key === 'Escape') {
-    const popup = document.querySelector('.popup_opened');
-    closePopup(popup);
+    const popup = document.querySelector('.popup_opened')
+    closePopup(popup)
   }
 }
 
 function closeCross() {
-  const popup = document.querySelector('.popup_opened');
-  closePopup(popup);
+  const popup = document.querySelector('.popup_opened')
+  closePopup(popup)
 }
 
 industrialFirstButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialFirst)))
 industrialSecondButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialSecond)))
 industrialThirdButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialThird)))
 industrialFourthButton.addEventListener('click', () => openPopup(labPopup, findHeader(industrialFourth)))
+
+// popup Burger
+const mainPopup = document.querySelector('.popup__navigation')
+const navigationItems = document.querySelectorAll('li.navigation__item')
+const linkAspirant = document.querySelector('#link-aspirant')
+const linkMagistr = document.querySelector('#link-magistr')
+const miniList = document.querySelector('.navigation__mini-list')
+const expanderMiniList = document.querySelector('.navigation__item-expander')
+
+document.querySelector('.header__burger-icon').addEventListener('click', () => openPopup(mainPopup))
+navigationItems.forEach(element => { element.addEventListener('click', closeCross) })
+let bool = true
+
+expanderMiniList.addEventListener('click', () => {
+  if(bool){
+    addClassPopupBurger()
+    bool=false
+  }
+  else{
+    removeClassPopupBurger()
+    bool=true
+  }
+})
+
+function addClassPopupBurger() {
+  navigationItems.forEach(element => {
+    element.querySelector('.navigation__link').classList.add('navigation__link_disable')
+    element.classList.add('navigation__item_disable') 
+  })
+  expanderMiniList.classList.add('navigation__item-expander_disable')
+  miniList.classList.add('mini-list_active')
+  navigationItems.forEach(element => { element.removeEventListener('click', closeCross) })
+}
+
+function removeClassPopupBurger() {
+  navigationItems.forEach(element => {
+    element.querySelector('.navigation__link').classList.remove('navigation__link_disable')
+    element.classList.remove('navigation__item_disable') 
+  })
+  expanderMiniList.classList.remove('navigation__item-expander_disable')
+  miniList.classList.remove('mini-list_active')
+  navigationItems.forEach(element => { element.addEventListener('click', closeCross) })
+}
+
+linkAspirant.addEventListener('click', () => {
+  aspirantOnClick()
+  closeCross()
+  removeClassPopupBurger()
+})
+
+
+linkMagistr.addEventListener('click', () => {
+  magistrOnClick()
+  closeCross()
+  removeClassPopupBurger()
+})
 
 // ** Начальная инициализация
 // Включение валидации полей ввода форм
@@ -440,4 +499,4 @@ enableValidation({
   submitButtonSelector: 'form__send-btn',
   inactiveButtonClass: 'form__send-btn_disabled',
   errorClass: 'form__input-error_active'
-});
+})
