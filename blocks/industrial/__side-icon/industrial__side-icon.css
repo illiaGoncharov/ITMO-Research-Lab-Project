@@ -1,0 +1,9 @@
+.industrial__side-icon {
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 1240px) {
+    .industrial__side-icon {
+        display: none;
+    }
+}

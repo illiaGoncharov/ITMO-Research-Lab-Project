@@ -1,0 +1,39 @@
+.communication__text-area {
+  width: 100%;
+  min-height: 140px;
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  border: 0px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.1px;
+  resize: none;
+}
+
+.communication__text-area::placeholder {
+  color: #009FAC;
+}
+
+@media (min-width: 768px) {
+  .communication__text-area {
+    min-height: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+@media (min-width: 1440px) {
+  .communication__text-area {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}

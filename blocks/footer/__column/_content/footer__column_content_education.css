@@ -1,0 +1,4 @@
+.footer__column_content_education {
+  grid-area: education;
+  flex-direction: column;
+}

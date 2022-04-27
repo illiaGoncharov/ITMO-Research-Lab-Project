@@ -1,0 +1,32 @@
+.industrial__img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 264px;
+    height: 276px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.industrial__img:nth-child(2) { 
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .industrial__img {
+        min-height: 240px;
+        max-width: 330px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .industrial__img {
+        width: calc(100% - 40px);
+        height: 180px;
+    }
+    .industrial__img:nth-child(2) { 
+        display: none;
+    }
+}

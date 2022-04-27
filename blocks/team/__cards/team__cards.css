@@ -1,0 +1,18 @@
+.team__cards {
+  margin: 0;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+@media (min-width : 768px) {
+  .team__cards { 
+    padding-top: 30px;
+  }
+}
+
+@media (min-width : 900px) {
+  .team__cards { 
+    max-width: 81%;
+  }
+}

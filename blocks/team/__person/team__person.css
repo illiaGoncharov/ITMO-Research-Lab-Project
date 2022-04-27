@@ -1,0 +1,23 @@
+.team__person {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+
+@media (min-width: 768px) {
+  .team__person {
+    border-radius: 8.24px;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__person {
+    border-radius: 10px;
+
+  }
+}

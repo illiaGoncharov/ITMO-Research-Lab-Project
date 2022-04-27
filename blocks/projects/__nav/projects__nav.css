@@ -1,0 +1,11 @@
+.projects__nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}

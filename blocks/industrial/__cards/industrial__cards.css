@@ -1,0 +1,31 @@
+.industrial__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(1110px - 34px);
+    padding-left: 34px;
+    padding-top: 80px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1240px) {
+    .industrial__cards {
+        box-sizing: border-box;
+        max-width: 690px;
+        gap: 25px;
+        padding: 0;
+        padding-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .industrial__cards {
+        width: calc(100vw - 34px);
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}

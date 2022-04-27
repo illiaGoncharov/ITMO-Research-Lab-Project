@@ -1,0 +1,16 @@
+
+.publications__slider-button_type_prev::after{
+    transform: rotate(-180deg);
+}
+
+@media screen and (min-width: 900px) {
+    .publications__slider-button_type_prev{
+        left: 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .publications__slider-button_type_prev{
+        left: 68px;
+    }
+}

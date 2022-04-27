@@ -1,0 +1,45 @@
+.educate__programs{
+    display: none;
+    flex-direction: column;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+
+    padding: 16px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 620px){
+    .educate__programs{
+        margin-top: 10px;
+        padding: 20px;
+    
+        column-gap: 23px;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .educate__programs{
+        align-self: stretch;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width: 1250px){
+    .educate__programs{
+        margin-top: 30px;
+        padding: 30px;
+
+        align-self: auto;
+
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .educate__programs{
+        width: 1109px;
+    }
+}

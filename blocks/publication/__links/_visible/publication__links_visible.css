@@ -1,0 +1,4 @@
+.publication__links_visible{
+    display: flex;
+    justify-content: space-between;
+}

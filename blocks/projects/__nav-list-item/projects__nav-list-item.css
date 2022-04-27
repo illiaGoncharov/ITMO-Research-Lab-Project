@@ -1,0 +1,4 @@
+.projects__nav-list-item {
+    text-align: center;
+    width: calc(100% / 4);
+}

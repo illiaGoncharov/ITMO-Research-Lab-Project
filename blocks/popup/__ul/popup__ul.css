@@ -1,0 +1,25 @@
+.popup__ul {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+
+@media (min-width: 768px) {
+    .popup__ul {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .popup__ul {
+        font-size: 18px;
+        line-height: 25px;
+        display: block;
+        margin-top: 20px;
+    }
+}
