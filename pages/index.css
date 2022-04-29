@@ -174,12 +174,9 @@
 @import url(../blocks/navigation/__header/navigation__header.css);
 @import url(../blocks/navigation/__item/navigation__item.css);
 @import url(../blocks/navigation/__item-expander/navigation__item-expander.css);
-@import url(../blocks/navigation/__item-expander/_disable/navigation__item-expander_disable.css);
-@import url(../blocks/navigation/__item/_disable/navigation__item_disable.css);
 @import url(../blocks/navigation/__list/navigation__list.css);
 @import url(../blocks/navigation/__logo/navigation__logo.css);
 @import url(../blocks/navigation/__link/navigation__link.css);
-@import url(../blocks/navigation/__link/_disable/navigation__link_disable.css);
 @import url(../blocks/navigation/__button/navigation__button.css);
 
 @import url(../blocks/mini-list/__item/mini-list__item.css);

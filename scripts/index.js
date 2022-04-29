@@ -426,59 +426,31 @@ function closeCross() {
 }
 
 // popup Burger
-const mainPopup = document.querySelector('.popup__navigation')
-const navigationItems = document.querySelectorAll('li.navigation__item')
-const linkAspirant = document.querySelector('#link-aspirant')
-const linkMagistr = document.querySelector('#link-magistr')
-const miniList = document.querySelector('.navigation__mini-list')
-const expanderMiniList = document.querySelector('.navigation__item-expander')
-
-document.querySelector('.header__burger-icon').addEventListener('click', () => openPopup(mainPopup))
-navigationItems.forEach(element => { element.addEventListener('click', closeCross) })
-let bool = true
-
-expanderMiniList.addEventListener('click', () => {
-  if (bool) {
-    addClassPopupBurger()
-    bool = false
-  }
-  else {
-    removeClassPopupBurger()
-    bool = true
-  }
+const miniList = document.querySelector('.mini-list')
+document.querySelector('.header__burger-icon').addEventListener('click', () => {
+  openPopup(document.querySelector('.popup__navigation'))
+  miniList.classList.remove('mini-list_active')
 })
 
-function addClassPopupBurger() {
-  navigationItems.forEach(element => {
-    element.querySelector('.navigation__link').classList.add('navigation__link_disable')
-    element.classList.add('navigation__item_disable')
+document.querySelector('.navigation__item-expander').addEventListener('click', () => {
+  miniList.classList.toggle('mini-list_active')
+})
+document.querySelectorAll('.navigation__list li.navigation__item').forEach(el=>{
+  el.addEventListener('click', () => {
+    closeCross()
   })
-  expanderMiniList.classList.add('navigation__item-expander_disable')
-  miniList.classList.add('mini-list_active')
-  navigationItems.forEach(element => { element.removeEventListener('click', closeCross) })
-}
-
-function removeClassPopupBurger() {
-  navigationItems.forEach(element => {
-    element.querySelector('.navigation__link').classList.remove('navigation__link_disable')
-    element.classList.remove('navigation__item_disable')
-  })
-  expanderMiniList.classList.remove('navigation__item-expander_disable')
-  miniList.classList.remove('mini-list_active')
-  navigationItems.forEach(element => { element.addEventListener('click', closeCross) })
-}
+})
+const linkAspirant = document.querySelector('#link-aspirant')
+const linkMagistr = document.querySelector('#link-magistr')
 
 linkAspirant.addEventListener('click', () => {
   aspirantOnClick()
   closeCross()
-  removeClassPopupBurger()
 })
-
 
 linkMagistr.addEventListener('click', () => {
   magistrOnClick()
   closeCross()
-  removeClassPopupBurger()
 })
 
 // ** Начальная инициализация
