@@ -1,0 +1,7 @@
+.projects__thumb {
+    height: 310px;
+    width: calc(100% - 90px);
+    border-radius: 10px;
+    background: #009FAC;
+    padding: 20px;
+}
