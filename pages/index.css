@@ -48,6 +48,17 @@
 @import url(../blocks/industrial/__card-text/industrial__card-text.css);
 @import url(../blocks/industrial/__card-button/industrial__card-button.css);
 
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__title/projects__title.css);
+@import url(../blocks/projects/__nav/projects__nav.css);
+@import url(../blocks/projects/__nav-list-item/projects__nav-list-item.css);
+@import url(../blocks/projects/__thumb-wrapper/projects__thumb-wrapper.css);
+@import url(../blocks/projects/__interface/projects__interface.css);
+@import url(../blocks/projects/__thumb/projects__thumb.css);
+@import url(../blocks/projects/__thumb-logo/projects__thumb-logo.css);
+@import url(../blocks/projects/__thumb-text/projects__thumb-text.css);
+@import url(../blocks/projects/__thumb-link/projects__thumb-link.css);
+
 @import url(../blocks/title/title.css);
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/list/list.css);
