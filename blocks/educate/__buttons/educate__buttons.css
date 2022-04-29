@@ -1,0 +1,17 @@
+.educate__buttons{
+    display: flex;
+    border: 1px solid #E0F0FF;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 620px){
+    .educate__buttons{
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .educate__buttons{
+        margin-top: 8px;
+    }
+}

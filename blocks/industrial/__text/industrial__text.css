@@ -1,0 +1,27 @@
+.industrial__text{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: calc(12px + 2 * (100vw - 320px) / 448);
+    line-height: calc(16px + 4 * (100vw - 320px) / 448);
+    margin-bottom: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .industrial__text {
+        letter-spacing: 0.1px;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .industrial__text {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.1px;
+        margin-left: 12px;
+
+    }
+}

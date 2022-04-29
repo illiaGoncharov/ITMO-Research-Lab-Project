@@ -1,0 +1,10 @@
+.popup__text-box {
+    margin: 0 5% 16px 5%;
+}
+
+@media (min-width: 768px) {
+    .popup__text-box {
+        margin: 27px 3.8% 3.8% 3.8%;
+    }
+
+}

@@ -1,0 +1,21 @@
+.industrial__card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #001337;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.industrial__card:hover .industrial__card-title {
+    color: white;
+}
+
+@media screen and (max-width: 1240px) {
+    .industrial__card-title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

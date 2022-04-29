@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    height: 80px;
+    background: #000D26;
+}
+
+@media screen and (min-width: 1240px) {
+    .header {
+        position: relative;
+    }
+}

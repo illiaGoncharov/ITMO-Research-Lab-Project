@@ -1,0 +1,11 @@
+.navigation__logo{
+    width: 71px;
+    height: 24px;
+}
+
+@media screen and (min-width: 600px){
+    .navigation__logo {
+        width: 94.67px;
+        height: 32px;
+    }
+}

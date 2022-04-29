@@ -1,0 +1,11 @@
+.industrial__text-wrapper {
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 1240px) {
+    .industrial__text-wrapper {
+        padding-right: 0;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+}

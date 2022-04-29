@@ -1,0 +1,25 @@
+.industrial__title{
+    font-size: 36px;
+    line-height: 68px;
+    font-weight: 600;
+    text-align: center;
+    color: #000D26;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1240px) {
+    .industrial__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .industrial__title {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 20px;
+    }
+}

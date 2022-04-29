@@ -1,0 +1,21 @@
+.team__photo {
+  width: 120px;
+  height: 160px;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .team__photo {
+    width: 170px;
+    height: 226px;
+    margin: 20px 20px 12px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__photo {
+    width: 215px;
+    height: 286px;
+    margin: 20px;
+  }
+}
