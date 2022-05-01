@@ -2,3 +2,6 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+.navigation__link:visited{
+    color: #ccc6c6cb;
+}
