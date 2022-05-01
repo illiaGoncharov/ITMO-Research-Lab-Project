@@ -224,8 +224,7 @@ const dataPublications = [{
   aspects of the workflow compone…`
 },
 ]
-
-const settingsSwiperPublication = {
+const swiperPublication = new Swiper('.publications__body', {
   pagination: {
     clickable: true,
     el: '.swiper-pagination',
@@ -264,9 +263,8 @@ const settingsSwiperPublication = {
       },
     }
   },
-}
-
-const settingsSwiperTeam = {
+})
+ const swiperTeam = new Swiper('.team__cards',{
   pagination: {
     el: '.team__slide',
     clickable: true,
@@ -291,9 +289,8 @@ const settingsSwiperTeam = {
       spaceBetween: 30,
     },
   }
-}
-
-const settingsSwiperAboutUs = {
+})
+const swiperAboutUs = new Swiper('.about-us__swiper' ,{
   pagination: {
     el: '.about-us__bullets',
     clickable: true,
@@ -318,23 +315,7 @@ const settingsSwiperAboutUs = {
       spaceBetween: 22,
     },
   }
-}
-
-const updateSwiper = (selector, settings) => {
-  return new Swiper(selector, settings)
-}
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth <= 570 && window.innerWidth >= 550) {
-    updateSwiper('.publications__body', settingsSwiperPublication)
-    updateSwiper('.team__cards', settingsSwiperTeam)
-    updateSwiper('.about-us__swiper', settingsSwiperAboutUs)
-  }
 })
-
-updateSwiper('.publications__body', settingsSwiperPublication)
-updateSwiper('.team__cards', settingsSwiperTeam)
-updateSwiper('.about-us__swiper', settingsSwiperAboutUs)
 
 const publicationCards = document.querySelector('.publications__slider')
 const publictionTemplate = publicationCards.querySelector('.publications__template')
