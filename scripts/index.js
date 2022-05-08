@@ -325,32 +325,43 @@ const swiperProjects = new Swiper('.projects__body', {
   },
   pagination: {
     el: '.projects__interface',
-    clickable: true,
+    clickable: false,
     bulletClass: "swiper__bullet-projects",
     bulletActiveClass: "swiper__bullet-projects_active",
-    type: "custom",
-    renderCustom: function(swiper, current, total) {
-      let text=""
-      for (let i = 1; i <= total; i++) {
-        if(current + 4 ===i && current + 4 !== total){
-          text+= `<span class="swiper__bullet-projects">...</span>`
-          
-        }
-        else if(i > current + 4 && i < total || i < current - 1 && total - 5 > i){
-          text+= "<span style='display:none;'></span>"
-        }
-        else{
-          text+=`<span class="swiper__bullet-projects ${i===current && "swiper__bullet-projects_active"}">${i}</span>`;
-        }
-      }
-      return text
+    type: "fraction",
+    renderFraction: function (currentClass, totalClass) {
+      return `<span class=" ${currentClass} swiper__bullet-projects_active"></span>
+      <span>/</span>
+      <span class="${totalClass}"></span>`; 
     },
+  
   },
   breakpoints: {
     320: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 8,
+      pagination: {
+        el: '.projects__interface',
+        clickable: true,
+        type: "custom",
+        renderCustom: function(swiper, current, total) {
+          let text=""
+          for (let i = 1; i <= total; i++) {
+            if(current + 4 ===i && current + 4 !== total){
+              text+= `<span class="swiper__bullet-projects">...</span>`
+              
+            }
+            else if(i > current + 4 && i < total || i < current - 1 && total - 5 > i){
+              text+= "<span style='display:none;'></span>"
+            }
+            else{
+              text+=`<span class="swiper__bullet-projects ${i===current && "swiper__bullet-projects_active"}">${i}</span>`;
+            }
+          }
+          return text
+        },
+      },
     },
     570: {
       slidesPerView: 3,

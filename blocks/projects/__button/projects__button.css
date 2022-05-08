@@ -8,6 +8,7 @@
     background-color: initial;
     background-repeat: no-repeat;
     transition: opacity 0.2s linear;
+    flex-shrink: 0;
 }
 .projects__button:hover{
     cursor: pointer;

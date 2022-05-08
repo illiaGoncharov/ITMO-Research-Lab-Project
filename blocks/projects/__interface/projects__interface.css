@@ -6,3 +6,8 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+@media screen and (min-width: 570px){
+    .projects__interface{
+        display: block;
+    }
+}
