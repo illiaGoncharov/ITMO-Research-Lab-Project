@@ -1,3 +1,8 @@
 .projects__interface {
     text-align: center;
+    display: flex;
+    column-gap: 30.3px;
+    row-gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
 }

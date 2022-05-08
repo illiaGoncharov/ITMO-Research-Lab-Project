@@ -1,0 +1,11 @@
+.projects__select-items{
+    min-height: 44px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    background-color: #000D26;
+    margin-top: 5px;
+    padding: 16px 0;
+    padding-left: 16px;
+    list-style-type: none;
+}

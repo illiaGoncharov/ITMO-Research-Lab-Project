@@ -2,8 +2,14 @@
     margin-block-start: 0;
     margin-block-end: 0;
     text-align: center;
-    font-size: 36px;
-    line-height: 68px;
     font-weight: 600;
-    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .projects__title {
+
+    }
 }

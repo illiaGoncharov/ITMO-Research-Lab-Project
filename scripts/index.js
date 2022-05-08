@@ -228,6 +228,8 @@ const swiperPublication = new Swiper('.publications__body', {
   pagination: {
     clickable: true,
     el: '.swiper-pagination',
+    bulletClass: "swiper__bullet-publication",
+    bulletActiveClass: "swiper__bullet-publication_active",
   },
   navigation: {
     nextEl: '.publications__slider-button_type_next',
@@ -315,6 +317,51 @@ const swiperAboutUs = new Swiper('.about-us__swiper' ,{
       spaceBetween: 22,
     },
   }
+})
+const swiperProjects = new Swiper('.projects__body', {
+  navigation: {
+    nextEl: '.projects__button_type_next',
+    prevEl: '.projects__button_type_prev',
+  },
+  pagination: {
+    el: '.projects__interface',
+    clickable: true,
+    bulletClass: "swiper__bullet-projects",
+    bulletActiveClass: "swiper__bullet-projects_active",
+    type: "custom",
+    renderCustom: function(swiper, current, total) {
+      let text=""
+      for (let i = 1; i <= total; i++) {
+        if(current + 4 ===i && current + 4 !== total){
+          text+= `<span class="swiper__bullet-projects">...</span>`
+          
+        }
+        else if(i > current + 4 && i < total || i < current - 1 && total - 5 > i){
+          text+= "<span style='display:none;'></span>"
+        }
+        else{
+          text+=`<span class="swiper__bullet-projects ${i===current && "swiper__bullet-projects_active"}">${i}</span>`;
+        }
+      }
+      return text
+    },
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 8,
+    },
+    570: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1100: {
+      slidesPerView: 4, 
+      spaceBetween: 30,
+    },
+  }
+
 })
 
 const publicationCards = document.querySelector('.publications__slider')
@@ -485,3 +532,16 @@ teamData.forEach(item => {
   
 
 })
+
+const projectsList = document.querySelector('.projects__select-items')
+document.querySelector('.projects__select').addEventListener("click", () => {
+  projectsList.classList.toggle('projects__select-items_visible')
+})
+
+const selectText = document.querySelector('.projects__select-text')
+projectsList.querySelectorAll('.projects__label').forEach(label=>{
+  label.addEventListener("click", () => {
+    selectText.textContent = label.textContent;
+  })
+})
+
