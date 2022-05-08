@@ -1,3 +1,8 @@
 .projects__thumb-wrapper {
     padding-bottom: 30px;
 }
+@media screen and (min-width: 768px){
+    .projects__thumb-wrapper {
+        padding-bottom: 32px;
+    }
+}

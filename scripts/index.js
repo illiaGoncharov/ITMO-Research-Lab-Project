@@ -363,7 +363,7 @@ const swiperProjects = new Swiper('.projects__body', {
         },
       },
     },
-    570: {
+    700: {
       slidesPerView: 3,
       spaceBetween: 30,
     },

@@ -63,6 +63,7 @@
 @import url(../blocks/projects/__button/_type/projects__button_type_prev.css);
 @import url(../blocks/projects/__nav/projects__nav.css);
 @import url(../blocks/projects/__nav-list-item/projects__nav-list-item.css);
+@import url(../blocks/projects/__nav-list-item/_active/projects__nav-list-item_active.css);
 @import url(../blocks/projects/__thumb-wrapper/projects__thumb-wrapper.css);
 @import url(../blocks/projects/__interface/projects__interface.css);
 @import url(../blocks/projects/__thumb/projects__thumb.css);

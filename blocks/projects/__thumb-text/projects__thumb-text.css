@@ -10,8 +10,15 @@
     letter-spacing: 0.1px;
 }
 
-@media screen and (min-width: 768px){
-    .projects__thumb-text {
-
+@media screen and (min-width: 450px){
+    .projects__thumb-text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media screen and (min-width: 700px){
+    .projects__thumb-text{
+        line-height: 20px;
+        padding-bottom: 8px;
     }
 }

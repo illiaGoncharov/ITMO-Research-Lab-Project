@@ -4,3 +4,8 @@
     padding: 10px;
     box-sizing: border-box;
 }
+@media screen and (min-width: 450px){
+    .projects__thumb{
+        padding-bottom: 15px;
+    }
+}

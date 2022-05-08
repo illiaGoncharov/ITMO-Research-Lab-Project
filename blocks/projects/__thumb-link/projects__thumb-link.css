@@ -11,3 +11,9 @@
 .projects__thumb-link:hover{
     opacity: 0.5;
 }
+@media screen and (min-width: 700px){
+    .projects__thumb-link{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

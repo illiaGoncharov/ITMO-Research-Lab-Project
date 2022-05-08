@@ -3,10 +3,10 @@
     width: 100%;
     justify-content: space-between;
 }
-@media screen and (min-width: 570px){
+@media screen and (min-width: 700px){
     .projects__navigation{
        justify-content: center;
        width: auto;
        column-gap: 33px;
     }
-}
+} 
