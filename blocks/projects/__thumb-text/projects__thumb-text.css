@@ -22,3 +22,10 @@
         padding-bottom: 8px;
     }
 }
+@media screen and (min-width: 1100px){
+    .projects__thumb-text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+}

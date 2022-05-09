@@ -5,6 +5,7 @@
 
 @media screen and (min-width: 768px){
     .projects__thumb-logo {
-
+        width: 112px;
+        height: 48px;
     }
 }
