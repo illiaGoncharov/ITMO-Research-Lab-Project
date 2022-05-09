@@ -49,9 +49,21 @@
 @import url(../blocks/industrial/__card-button/industrial__card-button.css);
 
 @import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__body/projects__body.css);
 @import url(../blocks/projects/__title/projects__title.css);
+@import url(../blocks/projects/__select/projects__select.css);
+@import url(../blocks/projects/__select-input/projects__select-input.css);
+@import url(../blocks/projects/__select-items/projects__select-items.css);
+@import url(../blocks/projects/__select-text/projects__select-text.css);
+@import url(../blocks/projects/__select-items/_visible/projects__select-items_visible.css);
+@import url(../blocks/projects/__label/projects__label.css);
+@import url(../blocks/projects/__navigation/projects__navigation.css);
+@import url(../blocks/projects/__button/projects__button.css);
+@import url(../blocks/projects/__button/_type/projects__button_type_next.css);
+@import url(../blocks/projects/__button/_type/projects__button_type_prev.css);
 @import url(../blocks/projects/__nav/projects__nav.css);
 @import url(../blocks/projects/__nav-list-item/projects__nav-list-item.css);
+@import url(../blocks/projects/__nav-list-item/_active/projects__nav-list-item_active.css);
 @import url(../blocks/projects/__thumb-wrapper/projects__thumb-wrapper.css);
 @import url(../blocks/projects/__interface/projects__interface.css);
 @import url(../blocks/projects/__thumb/projects__thumb.css);
@@ -111,8 +123,10 @@
 @import url(../blocks/social-sites/social-sites.css);
 @import url(../blocks/social-sites/_visible/social-sites_visible.css);
 
-@import url(../blocks/swiper-pagination-bullet/swiper-pagination-bullet.css);
-@import url(../blocks/swiper-pagination-bullet-active/swiper-pagination-bullet-active.css);
+@import url(../blocks/swiper/__bullet-publication/swiper__bullet-publication.css);
+@import url(../blocks/swiper/__bullet-publication/_active/swiper__bullet-publication_active.css);
+@import url(../blocks/swiper/__bullet-projects/swiper__bullet-projects.css);
+@import url(../blocks/swiper/__bullet-projects/_active/swiper__bullet-projects_active.css);
 @import url(../blocks/intro/__bullet/intro__bullet.css);
 
 @import url(../blocks/team/team.css);
@@ -185,12 +199,9 @@
 @import url(../blocks/navigation/__header/navigation__header.css);
 @import url(../blocks/navigation/__item/navigation__item.css);
 @import url(../blocks/navigation/__item-expander/navigation__item-expander.css);
-@import url(../blocks/navigation/__item-expander/_disable/navigation__item-expander_disable.css);
-@import url(../blocks/navigation/__item/_disable/navigation__item_disable.css);
 @import url(../blocks/navigation/__list/navigation__list.css);
 @import url(../blocks/navigation/__logo/navigation__logo.css);
 @import url(../blocks/navigation/__link/navigation__link.css);
-@import url(../blocks/navigation/__link/_disable/navigation__link_disable.css);
 @import url(../blocks/navigation/__button/navigation__button.css);
 
 @import url(../blocks/mini-list/__item/mini-list__item.css);

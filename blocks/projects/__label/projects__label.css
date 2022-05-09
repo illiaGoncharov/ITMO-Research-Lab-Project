@@ -1,0 +1,7 @@
+.projects__label{
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+}
+.projects__label:hover{
+    opacity: 0.5;
+}

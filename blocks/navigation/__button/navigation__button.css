@@ -2,4 +2,8 @@
     background-image: url(../../../images/close1.svg);
     position: static;
     background-color: #000D26;
+    transition: opacity 0.2s linear;
+}
+.navigation__button:hover{
+    opacity: 0.6;
 }

@@ -1,3 +1,25 @@
 .projects__thumb-link {
     color: #fff;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+
+    transition: opacity 0.2s linear;
+}
+.projects__thumb-link:hover{
+    opacity: 0.5;
+}
+@media screen and (min-width: 700px){
+    .projects__thumb-link{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media screen and (min-width: 1100px){
+    .projects__thumb-link {
+        font-size: 14px;
+        line-height: 19px;
+    }
 }

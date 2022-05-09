@@ -1,4 +1,24 @@
 .projects__nav-list-item {
-    text-align: center;
-    width: calc(100% / 4);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    padding: 0 16px;
+    padding-bottom: 8px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.2s linear;
+}
+.projects__nav-list-item:hover{
+    opacity: 0.5;
+}
+@media screen and (min-width: 1100px){
+    .projects__nav-list-item {
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 0 50px;
+        padding-bottom: 6px;
+    }
 }

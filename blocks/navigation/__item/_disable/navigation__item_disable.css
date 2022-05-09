@@ -1,7 +1,0 @@
-.navigation__item_disable{
-    opacity: 0.5;
-    cursor: default;
-}
-.navigation__item_disable:hover{
-    cursor: default;
-}

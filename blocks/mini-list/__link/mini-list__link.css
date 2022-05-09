@@ -1,8 +1,0 @@
-.mini-list__link{
-    padding: 0;
-    display: flex;
-}
-
-.mini-list__link:hover{
-    background-color: #001337;
-}

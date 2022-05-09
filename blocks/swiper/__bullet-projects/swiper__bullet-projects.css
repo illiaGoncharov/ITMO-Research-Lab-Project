@@ -1,0 +1,8 @@
+.swiper__bullet-projects{
+    color: #FFFFFF;
+    transition: opacity 0.2s linear;
+}
+.swiper__bullet-projects:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
