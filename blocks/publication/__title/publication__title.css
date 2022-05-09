@@ -3,6 +3,7 @@
     font-size: 14px;
     line-height: 19px;
 
+    margin: 0;
     margin-top: 12px;
 
     overflow: hidden;
@@ -25,5 +26,9 @@
 @media screen and (min-width: 1250px){
     .publication__title{
         margin-top: 20px;
+
+        font-size: 36px;
+        line-height: 68px;
+        letter-spacing: 0.1px;
     }
 }

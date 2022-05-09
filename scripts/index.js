@@ -224,11 +224,12 @@ const dataPublications = [{
   aspects of the workflow compone…`
 },
 ]
-
-const settingsSwiperPublication = {
+const swiperPublication = new Swiper('.publications__body', {
   pagination: {
     clickable: true,
     el: '.swiper-pagination',
+    bulletClass: "swiper__bullet-publication",
+    bulletActiveClass: "swiper__bullet-publication_active",
   },
   navigation: {
     nextEl: '.publications__slider-button_type_next',
@@ -264,9 +265,8 @@ const settingsSwiperPublication = {
       },
     }
   },
-}
-
-const settingsSwiperTeam = {
+})
+ const swiperTeam = new Swiper('.team__cards',{
   pagination: {
     el: '.team__slide',
     clickable: true,
@@ -291,9 +291,8 @@ const settingsSwiperTeam = {
       spaceBetween: 30,
     },
   }
-}
-
-const settingsSwiperAboutUs = {
+})
+const swiperAboutUs = new Swiper('.about-us__swiper' ,{
   pagination: {
     el: '.about-us__bullets',
     clickable: true,
@@ -318,23 +317,63 @@ const settingsSwiperAboutUs = {
       spaceBetween: 22,
     },
   }
-}
-
-const updateSwiper = (selector, settings) => {
-  return new Swiper(selector, settings)
-}
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth <= 570 && window.innerWidth >= 550) {
-    updateSwiper('.publications__body', settingsSwiperPublication)
-    updateSwiper('.team__cards', settingsSwiperTeam)
-    updateSwiper('.about-us__swiper', settingsSwiperAboutUs)
-  }
 })
+const swiperProjects = new Swiper('.projects__body', {
+  navigation: {
+    nextEl: '.projects__button_type_next',
+    prevEl: '.projects__button_type_prev',
+  },
+  pagination: {
+    el: '.projects__interface',
+    clickable: false,
+    bulletClass: "swiper__bullet-projects",
+    bulletActiveClass: "swiper__bullet-projects_active",
+    type: "fraction",
+    renderFraction: function (currentClass, totalClass) {
+      return `<span class=" ${currentClass} swiper__bullet-projects_active"></span>
+      <span>/</span>
+      <span class="${totalClass}"></span>`; 
+    },
+  
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 8,
+      pagination: {
+        el: '.projects__interface',
+        clickable: true,
+        type: "custom",
+        renderCustom: function(swiper, current, total) {
+          let text=""
+          for (let i = 1; i <= total; i++) {
+            if(current + 4 ===i && current + 4 !== total){
+              text+= `<span class="swiper__bullet-projects">...</span>`
+              
+            }
+            else if(i > current + 4 && i < total || i < current - 1 && total - 5 > i){
+              text+= "<span style='display:none;'></span>"
+            }
+            else{
+              text+=`<span class="swiper__bullet-projects ${i===current && "swiper__bullet-projects_active"}">${i}</span>`;
+            }
+          }
+          return text
+        },
+      },
+    },
+    700: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1100: {
+      slidesPerView: 4, 
+      spaceBetween: 30,
+    },
+  }
 
-updateSwiper('.publications__body', settingsSwiperPublication)
-updateSwiper('.team__cards', settingsSwiperTeam)
-updateSwiper('.about-us__swiper', settingsSwiperAboutUs)
+})
 
 const publicationCards = document.querySelector('.publications__slider')
 const publictionTemplate = publicationCards.querySelector('.publications__template')
@@ -426,59 +465,31 @@ function closeCross() {
 }
 
 // popup Burger
-const mainPopup = document.querySelector('.popup__navigation')
-const navigationItems = document.querySelectorAll('li.navigation__item')
-const linkAspirant = document.querySelector('#link-aspirant')
-const linkMagistr = document.querySelector('#link-magistr')
-const miniList = document.querySelector('.navigation__mini-list')
-const expanderMiniList = document.querySelector('.navigation__item-expander')
-
-document.querySelector('.header__burger-icon').addEventListener('click', () => openPopup(mainPopup))
-navigationItems.forEach(element => { element.addEventListener('click', closeCross) })
-let bool = true
-
-expanderMiniList.addEventListener('click', () => {
-  if (bool) {
-    addClassPopupBurger()
-    bool = false
-  }
-  else {
-    removeClassPopupBurger()
-    bool = true
-  }
+const miniList = document.querySelector('.mini-list')
+document.querySelector('.header__burger-icon').addEventListener('click', () => {
+  openPopup(document.querySelector('.popup__navigation'))
+  miniList.classList.remove('mini-list_active')
 })
 
-function addClassPopupBurger() {
-  navigationItems.forEach(element => {
-    element.querySelector('.navigation__link').classList.add('navigation__link_disable')
-    element.classList.add('navigation__item_disable')
+document.querySelector('.navigation__item-expander').addEventListener('click', () => {
+  miniList.classList.toggle('mini-list_active')
+})
+document.querySelectorAll('.navigation__list li.navigation__item').forEach(el=>{
+  el.addEventListener('click', () => {
+    closeCross()
   })
-  expanderMiniList.classList.add('navigation__item-expander_disable')
-  miniList.classList.add('mini-list_active')
-  navigationItems.forEach(element => { element.removeEventListener('click', closeCross) })
-}
-
-function removeClassPopupBurger() {
-  navigationItems.forEach(element => {
-    element.querySelector('.navigation__link').classList.remove('navigation__link_disable')
-    element.classList.remove('navigation__item_disable')
-  })
-  expanderMiniList.classList.remove('navigation__item-expander_disable')
-  miniList.classList.remove('mini-list_active')
-  navigationItems.forEach(element => { element.addEventListener('click', closeCross) })
-}
+})
+const linkAspirant = document.querySelector('#link-aspirant')
+const linkMagistr = document.querySelector('#link-magistr')
 
 linkAspirant.addEventListener('click', () => {
   aspirantOnClick()
   closeCross()
-  removeClassPopupBurger()
 })
-
 
 linkMagistr.addEventListener('click', () => {
   magistrOnClick()
   closeCross()
-  removeClassPopupBurger()
 })
 
 // ** Начальная инициализация
@@ -531,4 +542,23 @@ teamData.forEach(item => {
   teamBox.append(teamCard)
   
 
+})
+
+const projectsList = document.querySelector('.projects__select-items')
+document.querySelector('.projects__select').addEventListener("click", () => {
+  projectsList.classList.toggle('projects__select-items_visible')
+})
+
+const selectText = document.querySelector('.projects__select-text')
+projectsList.querySelectorAll('.projects__label').forEach(label=>{
+  label.addEventListener("click", () => {
+    selectText.textContent = label.textContent;
+  })
+})
+
+document.querySelectorAll('.projects__nav-list-item').forEach(el=>{
+    el.addEventListener('click', () => {
+      document.querySelector('.projects__nav-list-item_active').classList.remove('projects__nav-list-item_active')
+      el.classList.add('projects__nav-list-item_active')
+    })
 })

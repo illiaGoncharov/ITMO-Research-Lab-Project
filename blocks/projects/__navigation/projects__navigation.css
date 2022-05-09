@@ -1,0 +1,17 @@
+.projects__navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (min-width: 700px){
+    .projects__navigation{
+       justify-content: center;
+       width: auto;
+       column-gap: 33px;
+    }
+} 
+@media screen and (min-width: 1100px){
+    .projects__navigation{
+       column-gap: 48px;
+    }
+} 

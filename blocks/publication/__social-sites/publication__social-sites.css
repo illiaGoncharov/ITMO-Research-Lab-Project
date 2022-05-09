@@ -1,4 +1,6 @@
 .publication__social-sites{
+    margin: 0;
+    padding:0;
     padding: 17px;
     position: absolute;
     right: -16px;

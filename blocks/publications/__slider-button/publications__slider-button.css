@@ -1,5 +1,9 @@
 .publications__slider-button{
     z-index: -1;
+    
+    padding: 0;
+    border: none;
+    cursor: pointer;
 
     width: 50px;
     height: 50px;
