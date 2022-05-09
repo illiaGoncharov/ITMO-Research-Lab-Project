@@ -1,4 +1,7 @@
 .publicaction__button{
+    padding: 0;
+    border: none;
+    cursor: pointer;
     color: none;
     background-color: inherit;
 }

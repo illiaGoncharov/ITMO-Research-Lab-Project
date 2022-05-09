@@ -71,13 +71,6 @@
 @import url(../blocks/projects/__thumb-text/projects__thumb-text.css);
 @import url(../blocks/projects/__thumb-link/projects__thumb-link.css);
 
-@import url(../blocks/title/title.css);
-@import url(../blocks/subtitle/subtitle.css);
-@import url(../blocks/list/list.css);
-@import url(../blocks/link/link.css);
-@import url(../blocks/button/button.css);
-@import url(../blocks/logo/logo.css);
-
 @import url(../blocks/educate/educate.css);
 @import url(../blocks/educate/__body/educate__body.css);
 @import url(../blocks/educate/__title/educate__title.css);

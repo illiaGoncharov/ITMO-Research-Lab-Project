@@ -1,4 +1,8 @@
 .educate__button{
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    
     text-transform: uppercase;
     padding: 12px 0;
     width: 144px;
