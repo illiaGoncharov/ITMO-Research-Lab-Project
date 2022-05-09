@@ -556,3 +556,9 @@ projectsList.querySelectorAll('.projects__label').forEach(label=>{
   })
 })
 
+document.querySelectorAll('.projects__nav-list-item').forEach(el=>{
+    el.addEventListener('click', () => {
+      document.querySelector('.projects__nav-list-item_active').classList.remove('projects__nav-list-item_active')
+      el.classList.add('projects__nav-list-item_active')
+    })
+})
